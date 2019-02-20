@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XiaoYu_Bluetooth_Mediator_Example' do
+  pod 'XiaoYu_Bluetooth_Mediator', :path => '../'
+
+  target 'XiaoYu_Bluetooth_Mediator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
