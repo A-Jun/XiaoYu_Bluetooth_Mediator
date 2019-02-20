@@ -31,7 +31,7 @@
 		08F6A54B90D2E20FFD0B1DF6 /* Pods-XiaoYu_Bluetooth_Mediator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoYu_Bluetooth_Mediator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Tests/Pods-XiaoYu_Bluetooth_Mediator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1632C3D42137220B7FEA064A /* Pods-XiaoYu_Bluetooth_Mediator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoYu_Bluetooth_Mediator_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Tests/Pods-XiaoYu_Bluetooth_Mediator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2093E4DCF551B73F5053DEAB /* Pods_XiaoYu_Bluetooth_Mediator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XiaoYu_Bluetooth_Mediator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AC31F931B543F363EE0051D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3AC31F931B543F363EE0051D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3DE2ECD3BCB3703DF81C964B /* Pods_XiaoYu_Bluetooth_Mediator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XiaoYu_Bluetooth_Mediator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		586C40B34BEA6247C35B4A52 /* Pods-XiaoYu_Bluetooth_Mediator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoYu_Bluetooth_Mediator_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Example/Pods-XiaoYu_Bluetooth_Mediator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* XiaoYu_Bluetooth_Mediator_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoYu_Bluetooth_Mediator_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,9 +44,9 @@
 		607FACE51AFB9204008FA782 /* XiaoYu_Bluetooth_Mediator_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XiaoYu_Bluetooth_Mediator_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		82DE4F1E01EABC4AFA7881CA /* XiaoYu_Bluetooth_Mediator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XiaoYu_Bluetooth_Mediator.podspec; path = ../XiaoYu_Bluetooth_Mediator.podspec; sourceTree = "<group>"; };
+		82DE4F1E01EABC4AFA7881CA /* XiaoYu_Bluetooth_Mediator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XiaoYu_Bluetooth_Mediator.podspec; path = ../XiaoYu_Bluetooth_Mediator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		84E8E5BF45DA6230ED7AE9C6 /* Pods-XiaoYu_Bluetooth_Mediator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoYu_Bluetooth_Mediator_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Example/Pods-XiaoYu_Bluetooth_Mediator_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D2798EB24CC35CDBAC78FD35 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D2798EB24CC35CDBAC78FD35 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,11 +289,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Example/Pods-XiaoYu_Bluetooth_Mediator_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/RJBluetooth/RJBluetooth.framework",
+				"${BUILT_PRODUCTS_DIR}/RJBluetooth_Mediator/RJBluetooth_Mediator.framework",
+				"${BUILT_PRODUCTS_DIR}/XiaoYu_Bluetooth/XiaoYu_Bluetooth.framework",
 				"${BUILT_PRODUCTS_DIR}/XiaoYu_Bluetooth_Mediator/XiaoYu_Bluetooth_Mediator.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSDFULibrary/iOSDFULibrary.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RJBluetooth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RJBluetooth_Mediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XiaoYu_Bluetooth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XiaoYu_Bluetooth_Mediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDFULibrary.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

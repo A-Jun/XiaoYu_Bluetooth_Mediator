@@ -1,0 +1,6 @@
+framework module Pods_XiaoYu_Bluetooth_Mediator_Example {
+  umbrella header "Pods-XiaoYu_Bluetooth_Mediator_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

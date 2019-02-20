@@ -1,0 +1,2242 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D3E70378D34021F32C9737BACA6A1E /* RJSensorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8199617B7294EC44CF7D88699611C8 /* RJSensorModel.swift */; };
+		0331B5B1668F7FAF11CA3D33205EA9F9 /* Pods-XiaoYu_Bluetooth_Mediator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C87F49AE486B5B3CCBED99F252FCFA1 /* Pods-XiaoYu_Bluetooth_Mediator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0344677689A6DA8E4587C910251F5928 /* CTMediator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89DB1D160E11D147B7A5A096A3C36E5 /* CTMediator.framework */; };
+		0376B76DF466AB67D85AC56205BC96E1 /* DFUControlPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFBA2016F17DFE5AC46134421B8D7D /* DFUControlPoint.swift */; };
+		07A368988A07DC359E1374C8DCE15044 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05ACE672BC094FE4D8D43E0A0714285 /* Zip.swift */; };
+		07AFDBBBEFC523435016C643E1028E89 /* SecureDFUPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55543F1E11C736B6C28D2F39F7BF76C5 /* SecureDFUPacket.swift */; };
+		085331C43DA12EF7B3B02CE4FAEBBB34 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 26E2A59A85C4E52D71A5DC876FABEEAC /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		09757D4A09D82DB5AB6CAAF58A8D5598 /* DFUUuidHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE605444ED5B8B4B03C99D57248BE928 /* DFUUuidHelper.swift */; };
+		0BF245096057F04DE5549EBAC5BD140F /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EE50DB3B1A425DD33CA54BA4378A4AE1 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0CA70E1704329D7A3B5FF2AEE39471DC /* RJBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717DF8C99353A0037ED1D126E8C9F998 /* RJBluetooth.framework */; };
+		0F71613F5085C65E9F0C51C2D8836D63 /* SecureDFUExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411598995D5657659C6CBBF920F3399F /* SecureDFUExecutor.swift */; };
+		100C2DEEABA2CCE49B37349172C3969F /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F098B3893C3883F49D5E1E2A76E8B4E7 /* ZipUtilities.swift */; };
+		1C8E9EF528481B8C7F9306DE710775ED /* RJBluetoothCentreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C29E881E83A4C5DBC0FE1F99EC898A /* RJBluetoothCentreManager.swift */; };
+		1CFCA9200134B22D6EA485F895E84586 /* DFUExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585EB36D7660FF72EBC5498EC051044 /* DFUExecutor.swift */; };
+		1F3AB48B790349971623E34565F09B4C /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D03A965AFC5E064C6EA8DCEE02916B /* CTMediator.m */; };
+		20663B32934F2D9FDDDD5A810A7178D6 /* ManifestFirmwareInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4778D7F2D04945D3314DF96FD11EF7 /* ManifestFirmwareInfo.swift */; };
+		294DB792E4E5B7022E6E5E9BE158FAA9 /* RJBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149961C1BC598BDDE3BC4A6BCF590D5 /* RJBluetoothManager.swift */; };
+		295902683B296D6856D944DA628548B5 /* DFUPeripheralSelectorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DCF26CD902D902F054E47EA299E351 /* DFUPeripheralSelectorDelegate.swift */; };
+		2E438E70AC7981207518624AEEBFF1A7 /* DFUServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7AACF24B00CB7EB79412BE8E8B37C /* DFUServiceDelegate.swift */; };
+		3243DBD2046770748AB49416B27921C7 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860D904698F4F6F90C8CEC323D310FA /* Pods-XiaoYu_Bluetooth_Mediator_Tests-dummy.m */; };
+		35B3EAC0D7A53BD7EB42A3D5D83511DE /* DFUFirmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEEE62626CEE3C453BEE02CBFB1B4F5 /* DFUFirmware.swift */; };
+		35C640C8B96046096DC19BC62462C466 /* crc32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C8DA2C62CA8B158EFBB6FCEC0AC1C2 /* crc32.swift */; };
+		35C82F7D3B17AE0C232B34C14B22A735 /* DFUStreamHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7C7AE27F7488FAFDFC63D17DA4F97 /* DFUStreamHex.swift */; };
+		3768F167F1A4BC430F735F4756D6A66C /* DFUService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6F4C0C854834E8DB96FB147F25B36 /* DFUService.swift */; };
+		3913AC760D353895E877539DC544737E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D403E35F4FE7DC2A4EEEC0263B7E0 /* Double.swift */; };
+		3CDA233938A480A826AD054AEEC1738F /* RJBluetoothPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121221870D85CE226C39035D830E29C5 /* RJBluetoothPeripheralManager.swift */; };
+		3E810EEED4FA7C26EE8B04EDF8F27688 /* ZipArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D8303261DA00345D3F8631FD634E4 /* ZipArchive.swift */; };
+		3FAA44005CB95AC4BCA1D89424C0A448 /* DFUVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72776E6FB94E69DC178CE1B1FA85844D /* DFUVersion.swift */; };
+		41C3BFE7BF1EE1B681F39396B28CB0F9 /* iOSDFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848D9A7EB6C1E06CA1C11845862A4182 /* iOSDFULibrary.framework */; };
+		4242E66AA11019A5DF2929992C178E52 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2311536B7707E5BD07421C99FB3CA68D /* unzip.c */; };
+		4276D9C94B010809216BB2EB1539FA0C /* CTMediator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7057DC25CE9B2132D91CBCAD5DA390AB /* CTMediator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		430951CFF202BEC184A45FC1071C2AEC /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6934C2C2D7E2BF5D9AD26F142F87894F /* LoggerDelegate.swift */; };
+		43227085020536B85762386E2497F78B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */; };
+		49075417D9DD248DAF69CFB02EAC85F1 /* DFUPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B9E4CB88DD3D50869DFE274BBEE2A /* DFUPeripheral.swift */; };
+		4ADE5A895CE14B798E248FED8992AC7F /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 01563072AC8BF75C96417EDE5850E6B4 /* Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D63B56231F263979AE42F41B208403E /* ButtonlessDFU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257AEEE487152BC78AFE08C84B93B69C /* ButtonlessDFU.swift */; };
+		546AF9556261E53713AE0F484C8E65AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */; };
+		5A1A6D15EF3D6FB6892B8D5FB5E39FC9 /* RJBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 633970BEBD76CC4144AAA03D2372A9B7 /* RJBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A8EBD0D3FB0753C67306D43FF3263D0 /* RJBluetooth_Mediator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BFCC91581900FD4AD80764FFCFFCF2 /* RJBluetooth_Mediator-dummy.m */; };
+		5EB72FA05AF8DD7B59BF2AB7BDEF4F37 /* DFUStreamBin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EB67EFA09F0B67868435AE38E7908E /* DFUStreamBin.swift */; };
+		5EFF860F295330196E4D7403C75BC49A /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9DC54E5B4EF032083B01C1D1C22A93 /* Zip.framework */; };
+		6026974167FADA6810F743996412BCDF /* DFUPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC83DB1344A842FA83F8D05F62BFB1C /* DFUPeripheralDelegate.swift */; };
+		63AEEF74577DC9BB66D4BDE5E1DE0D3B /* DFUStreamZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5DE8889738594000A9F87A759665D /* DFUStreamZip.swift */; };
+		63B4F2A84DE8BAF658583DBC725815E6 /* CTMediator+XiaoYu_Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBFFF2836DA17A2A192A582D929578C /* CTMediator+XiaoYu_Bluetooth.swift */; };
+		65936628A89780E7E9CC6EF1EC521413 /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9DC54E5B4EF032083B01C1D1C22A93 /* Zip.framework */; };
+		6978C51F53A56BC9BFF92124BA0C8CAE /* DFUPeripheralSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95A4BDAF2F1D293C603D1CD6BCE549 /* DFUPeripheralSelector.swift */; };
+		69E0D0A71E832E360B0F914B4071B686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */; };
+		6A4135BF13E4A778D2268C5275F71CA0 /* DFUServiceSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3C091981F1934FA646B34D7C39B2FA /* DFUServiceSelector.swift */; };
+		6F2B877A78147A6BCA098525291EAA87 /* DFUCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D289214AE2F377A4B04AD4AA6BCF883D /* DFUCharacteristic.swift */; };
+		70FBFC52CE8D704DEDB4F1D127DEF818 /* XiaoYu_Bluetooth_Mediator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E63CCA9A4FA092853207DDAA69EF97FE /* XiaoYu_Bluetooth_Mediator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71023477963763072A1B93743C1A4A3D /* iOSDFULibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D66B91BCC6C4E7BD8A45C99400DE32 /* iOSDFULibrary-dummy.m */; };
+		7455F364DA5C1F58FCC3D5EE7585C1D5 /* SecureDFUControlPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2948EDF6F0DC4D79A8CEB8AD71DDD583 /* SecureDFUControlPoint.swift */; };
+		75A794E99509DFDE75C0CBBF02D235BF /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E18B3D67C2E5C55096EB184FFC1A4A3 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		75BCDE12C494C9CC6DA22B39631A05C9 /* RJBluetooth_Mediator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE50463AE1F37608ADE34F67F031339 /* RJBluetooth_Mediator.framework */; };
+		75CCD1AFB095DE28CA16AD3978E42ABA /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9DC54E5B4EF032083B01C1D1C22A93 /* Zip.framework */; };
+		7C8E98C8113F561C2A2FD1366182611E /* DFUStarterPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE754B3C8D6D2610A019D818E8F1A37C /* DFUStarterPeripheral.swift */; };
+		7E680C74870B903B261F3799E3F3B5A7 /* iOSDFULibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1211D6191776F80C8FF7F7C6B739EDA /* iOSDFULibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80E3E4D4CE1033A5A5E2E73DF19CFA80 /* Zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0158B00D3A0D4A92DE1A578665031E2 /* Zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		818199C7E04B7AD496D5DA8928681958 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = B976C44C057A04E4AE8BBB5212AB4A9B /* ioapi.c */; };
+		824FC32E6BE344CCF58EC775D4A7C375 /* SecureDFUPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9047AE9FFE1FC5E13C060B1DA3FAE857 /* SecureDFUPeripheralDelegate.swift */; };
+		83C2E8F7B37E1043721502C4C6AA7A77 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F5894D22DF7D6C52574874C1F2D0F9 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		845B0B924263DD3E19936C6E1FDD640A /* RJBluetooth_Mediator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE50463AE1F37608ADE34F67F031339 /* RJBluetooth_Mediator.framework */; };
+		8CE5DE48CCE6B2DEC4DDCD4ABB5125F3 /* XiaoYu_Bluetooth_Mediator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DE4AF4000ECFC55DC7750B3F33C9F1 /* XiaoYu_Bluetooth_Mediator-dummy.m */; };
+		8F706AD6A20B1B1495AEDF69F628E396 /* LegacyDFUExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D77A7FA08A52E727475076E2FE4973 /* LegacyDFUExecutor.swift */; };
+		939DE7B5BC99416279154F78E4BE9F64 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D2EADFD9BF9C639BA98A40B0BEEEC3 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96F41FAB5032237AE862725E1485C138 /* RJBluetoothHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7D5C8F524E6777A32A96243346A04 /* RJBluetoothHelper.swift */; };
+		9843A075DD70CC40DBF29EA684B53488 /* RJFirmwareVersionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1FC8E24C62B14F7D6A48327A18543 /* RJFirmwareVersionModel.swift */; };
+		98DC31BC47B67BB08B10025506DDA54A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */; };
+		9980D1F1A0D1B96EDA265B24BC6B544A /* CTMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = E32C08DDD8E9B6185FE96BFCF46D1EFB /* CTMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E794BF82B3ED9550644DEB1A0590B1C /* DFUPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84BE482AB503E9D8FBCE341F5ED5E3B /* DFUPacket.swift */; };
+		9F1AE432D039010A0AA583DD4E682415 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */; };
+		A193C313475104B0377030251B672A0B /* CTMediator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89DB1D160E11D147B7A5A096A3C36E5 /* CTMediator.framework */; };
+		A62C8900ABC4C20E5ABA7041354276AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */; };
+		AA4320174091A4F06F5EFC09A6C2B069 /* RJBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717DF8C99353A0037ED1D126E8C9F998 /* RJBluetooth.framework */; };
+		AB92A35AEA6EE03F49C1B34A6659B367 /* IntelHex2BinConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4705B1E05643F233E9C8E6B14E7088D /* IntelHex2BinConverter.m */; };
+		AC27A653E388A8C62AB804A86D68A809 /* SecureDFUPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ACC40EBA4F60581BB4F7AB51974783 /* SecureDFUPeripheral.swift */; };
+		AC5A5C2F64B2180AC8CB53440F671D5F /* DFUStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA434B3826AC4437B0740E5CD235D850 /* DFUStream.swift */; };
+		ACA3E96E974881A5CB9F618D92B3173A /* XiaoYu_Bluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0393F2D6C28565D10310991C4FD43A2 /* XiaoYu_Bluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD0784CB60B2EE06542D1C8744EF7ECE /* iOSDFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848D9A7EB6C1E06CA1C11845862A4182 /* iOSDFULibrary.framework */; };
+		AF8795CB9204E1DF137674DE0A45493F /* LegacyDFUServiceInitiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2B31009DFB424D4819482D46B5693 /* LegacyDFUServiceInitiator.swift */; };
+		B65335749CFA4902D02904E052A43E70 /* IntelHex2BinConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDA7CEE1A9A52C8E872C1E8EDF922F1 /* IntelHex2BinConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7AC55A4081CA7DE2A3F979F30FF62E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0204568B168754D68AD7B6EC04943B49 /* UIKit.framework */; };
+		BD1B39D55E3595900715CE79828862EF /* DFUServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FFC81979600B0C33AD59A9E2525FC5 /* DFUServiceController.swift */; };
+		BDB8D9593DE577B81F17ECE5AC9512D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */; };
+		C6EBD534959A104A52EF0B100F98A923 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */; };
+		CD144E29E31D997AF0FDB3C63D988612 /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD82CBDCC442846EF1899FC169A9795 /* Manifest.swift */; };
+		CE5B8DBE60FD2A97DF47E61C66695219 /* LegacyDFUPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C1C551A75C18E39753200DE51EB57 /* LegacyDFUPeripheralDelegate.swift */; };
+		CF8083A528F7D7AA109A1AB8F052249D /* SecureDFUServiceInitiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12675F37D43F67B7D1643CD8835FB52F /* SecureDFUServiceInitiator.swift */; };
+		D5ED41435058C6898533E1BCDF5DFC87 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA50C966188578F921D7F5AD99112EC /* Data.swift */; };
+		D9225A6543F9E1BF738B99114950D7C7 /* Target_Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50598BDB7910A31D597B3C39A8FD26FB /* Target_Bluetooth.swift */; };
+		D9C76078839D501926FC1FC6203A4E64 /* LegacyDFUService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE214594841882B158FFF2F82F9AA45 /* LegacyDFUService.swift */; };
+		DAE6E167DFD62A7C151021EBD1D6FF05 /* RJBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F288142EB4B1C00A3A0FDEE9272140 /* RJBluetooth-dummy.m */; };
+		DCE495687A7CA12F14A1E6D27A8CA701 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */; };
+		DD7F2FBEE2B287C50A0B09AB881DE137 /* DFUServiceInitiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9BA1C5A94463560319257B5A9BD6F5 /* DFUServiceInitiator.swift */; };
+		DF88AEBD48899600EE538E2A2FA4EA56 /* Target_XiaoYu_BluetoothHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7409CF18F5D14058E39708A65DABC /* Target_XiaoYu_BluetoothHelper.swift */; };
+		DFF5E209E622CCBA67E2C23935542778 /* RJBluetooth_Mediator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3047E4C6FDD25C8611B51B3D8B266688 /* RJBluetooth_Mediator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E12A6A586289332BE0A900CE15252AC9 /* CTMediator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89DB1D160E11D147B7A5A096A3C36E5 /* CTMediator.framework */; };
+		E6DFD7B4C24737C8E51DB20957DDBC9B /* SecureDFUService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EB977176AFC686EB04030A0FDCC0E6 /* SecureDFUService.swift */; };
+		EA7A3584D8077E62F99BBA13AAC1D88C /* XiaoYu_Bluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C3FFAB2FFCCE3F404E7C25A6759737 /* XiaoYu_Bluetooth-dummy.m */; };
+		EEEE859D6A105016A8B1FCDCD588AD1E /* RJBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717DF8C99353A0037ED1D126E8C9F998 /* RJBluetooth.framework */; };
+		EFB73EF8638AFC5858594DB3237D18AF /* LoggerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD6516F49A9F13A9EC12C39C454F1A /* LoggerHelper.swift */; };
+		F1A3C72967A340C9F562D16CA616877B /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 489F15EC278DD62539E4D2A1277B9132 /* Zip-dummy.m */; };
+		F32C169ADFF5EDD1A79E939BB65E53E1 /* XiaoYu_Bluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF516AFF30289D7CAE55DC3A3805C400 /* XiaoYu_Bluetooth.framework */; };
+		F4569DA131C568C785D747146B842D4D /* CTMediator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDBBEF1681C5E968A18902F13EF6A2D /* CTMediator-dummy.m */; };
+		F49AE44F2325D1699D814D3332BCEFB6 /* CTMediator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89DB1D160E11D147B7A5A096A3C36E5 /* CTMediator.framework */; };
+		F762D15F4B219DAFD0BE555C41075A75 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4147277729EA845C634C8DF075732 /* zip.c */; };
+		F79C0B49B42178F828A8C281E7F12D36 /* LegacyDFUPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB5C20BE93837751D51C548A8C0D7E /* LegacyDFUPeripheral.swift */; };
+		FA394D823F607D1DFCDA4C613E4D745C /* SoftdeviceBootloaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094096939B892CF45A5ABFDA72C2E58B /* SoftdeviceBootloaderInfo.swift */; };
+		FA93F96527D4CBA4B3B15530899F5D9A /* Pods-XiaoYu_Bluetooth_Mediator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6033E79B783279ABFA0BD350FADAA53A /* Pods-XiaoYu_Bluetooth_Mediator_Example-dummy.m */; };
+		FB0BBFCC4C884C71774200309BC06CA7 /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1778EA8420DAB17C90F1621DA3D43D25 /* QuickZip.swift */; };
+		FC9DD23AC70BB0B6C40B751979591AE2 /* DFUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C32721B1B6A6F743A7B967578CB50F /* DFUController.swift */; };
+		FE19C0BA3110364242EC9B2DA7E355EF /* CTMediator+Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE448A4F42A83ECB897A2BA8BC528810 /* CTMediator+Bluetooth.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0848E13DC039DEE96A37B11F9EBA1582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248B87A6BCD655BB8F6CFE5413F00CA1;
+			remoteInfo = Zip;
+		};
+		0E982A07BA05889645A908F92CFE5DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C665CAE90AF7480F709AF8223B4D55D;
+			remoteInfo = RJBluetooth;
+		};
+		100897AD6DFE110BFC4A863984AE52EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F522D463E3C8BD0A74E0088D7BC6AA;
+			remoteInfo = XiaoYu_Bluetooth;
+		};
+		1470A32E618E7DED5F07ABA81BE2A47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 685EB18B6B251DBD96963DFED5E895BB;
+			remoteInfo = CTMediator;
+		};
+		18BA25B5E6001289C7DB519812D356C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 685EB18B6B251DBD96963DFED5E895BB;
+			remoteInfo = CTMediator;
+		};
+		498BC017C2DC03908D1B63E9E7E0D321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248B87A6BCD655BB8F6CFE5413F00CA1;
+			remoteInfo = Zip;
+		};
+		53D0596A9ED1BF55ED1CABA5396550BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0865FFA6A85B340373FFFFFC737505A5;
+			remoteInfo = RJBluetooth_Mediator;
+		};
+		65FEAC48DCE6A5AC86A1CBE25278A451 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0865FFA6A85B340373FFFFFC737505A5;
+			remoteInfo = RJBluetooth_Mediator;
+		};
+		807B8C53F60DF8DD2A81E33E7C0AB31B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 685EB18B6B251DBD96963DFED5E895BB;
+			remoteInfo = CTMediator;
+		};
+		81255723E09890CFD5260D0EEFEF07C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C665CAE90AF7480F709AF8223B4D55D;
+			remoteInfo = RJBluetooth;
+		};
+		87F540DE6461BCED481AC8549338A6E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248B87A6BCD655BB8F6CFE5413F00CA1;
+			remoteInfo = Zip;
+		};
+		8C6C964CCE206881E8307833BFF3CD2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 685EB18B6B251DBD96963DFED5E895BB;
+			remoteInfo = CTMediator;
+		};
+		947605451BA9F8BBC48CB442EC626B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 685EB18B6B251DBD96963DFED5E895BB;
+			remoteInfo = CTMediator;
+		};
+		948A1978DE8B29FD9142F134A7D171E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C665CAE90AF7480F709AF8223B4D55D;
+			remoteInfo = RJBluetooth;
+		};
+		A530D6DE035BB61143565142E81E242F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248B87A6BCD655BB8F6CFE5413F00CA1;
+			remoteInfo = Zip;
+		};
+		AF8150AFB38715CAE657E14EBC478DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55F026717CC64042402D86EC73B62B64;
+			remoteInfo = XiaoYu_Bluetooth_Mediator;
+		};
+		B9E06112E096489665694C2DEA0FF00D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD94DA638B5BB880CCE6B0C7FFE923BB;
+			remoteInfo = iOSDFULibrary;
+		};
+		C0FFAE84CB0BF38B548CB12E986194E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD94DA638B5BB880CCE6B0C7FFE923BB;
+			remoteInfo = iOSDFULibrary;
+		};
+		DAB6308B9173DA936C195FA332154169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD94DA638B5BB880CCE6B0C7FFE923BB;
+			remoteInfo = iOSDFULibrary;
+		};
+		E6B1FC0B2CDEA156DC7EC9EA27DCD532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0865FFA6A85B340373FFFFFC737505A5;
+			remoteInfo = RJBluetooth_Mediator;
+		};
+		F78FAA3E529C50CE9148FDB6FE109FA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F522D463E3C8BD0A74E0088D7BC6AA;
+			remoteInfo = XiaoYu_Bluetooth;
+		};
+		FDE97E173B0B4886720B3895CE36AFAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C665CAE90AF7480F709AF8223B4D55D;
+			remoteInfo = RJBluetooth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01563072AC8BF75C96417EDE5850E6B4 /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
+		01E4EAB57D5FCCE7F64D54FB18A39901 /* CTMediator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTMediator-prefix.pch"; sourceTree = "<group>"; };
+		0204568B168754D68AD7B6EC04943B49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0220691BFD658C6B35AAFA1644AEA31A /* iOSDFULibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOSDFULibrary.framework; path = iOSDFULibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F4BEF4B652C42E25285C97B19146B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A7C7AE27F7488FAFDFC63D17DA4F97 /* DFUStreamHex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamHex.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamHex.swift; sourceTree = "<group>"; };
+		08B7D5C8F524E6777A32A96243346A04 /* RJBluetoothHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RJBluetoothHelper.swift; path = XiaoYu_Bluetooth/Classes/RJBluetoothHelper.swift; sourceTree = "<group>"; };
+		094096939B892CF45A5ABFDA72C2E58B /* SoftdeviceBootloaderInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoftdeviceBootloaderInfo.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/SoftdeviceBootloaderInfo.swift; sourceTree = "<group>"; };
+		0BB4147277729EA845C634C8DF075732 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		0DC7AACF24B00CB7EB79412BE8E8B37C /* DFUServiceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceDelegate.swift; path = iOSDFULibrary/Classes/Implementation/DFUServiceDelegate.swift; sourceTree = "<group>"; };
+		0EC83DB1344A842FA83F8D05F62BFB1C /* DFUPeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralDelegate.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheralDelegate.swift; sourceTree = "<group>"; };
+		121221870D85CE226C39035D830E29C5 /* RJBluetoothPeripheralManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RJBluetoothPeripheralManager.swift; path = RJBluetooth/Classes/Bluetooth/RJBluetoothPeripheralManager.swift; sourceTree = "<group>"; };
+		12675F37D43F67B7D1643CD8835FB52F /* SecureDFUServiceInitiator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUServiceInitiator.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/DFU/SecureDFUServiceInitiator.swift; sourceTree = "<group>"; };
+		14E6F4C0C854834E8DB96FB147F25B36 /* DFUService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUService.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUService.swift; sourceTree = "<group>"; };
+		15D959599F19D3A2EF446DA4E402E28A /* Pods-XiaoYu_Bluetooth_Mediator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XiaoYu_Bluetooth_Mediator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1652E5BCD562C68638B5FF3922606293 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XiaoYu_Bluetooth_Mediator_Tests-resources.sh"; sourceTree = "<group>"; };
+		1778EA8420DAB17C90F1621DA3D43D25 /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
+		1860D904698F4F6F90C8CEC323D310FA /* Pods-XiaoYu_Bluetooth_Mediator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XiaoYu_Bluetooth_Mediator_Tests-dummy.m"; sourceTree = "<group>"; };
+		191D8303261DA00345D3F8631FD634E4 /* ZipArchive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipArchive.swift; path = iOSDFULibrary/Classes/Utilities/ZipArchive.swift; sourceTree = "<group>"; };
+		2149961C1BC598BDDE3BC4A6BCF590D5 /* RJBluetoothManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RJBluetoothManager.swift; path = RJBluetooth/Classes/Bluetooth/RJBluetoothManager.swift; sourceTree = "<group>"; };
+		21C3FFAB2FFCCE3F404E7C25A6759737 /* XiaoYu_Bluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XiaoYu_Bluetooth-dummy.m"; sourceTree = "<group>"; };
+		2311536B7707E5BD07421C99FB3CA68D /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
+		257AEEE487152BC78AFE08C84B93B69C /* ButtonlessDFU.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonlessDFU.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Characteristics/ButtonlessDFU.swift; sourceTree = "<group>"; };
+		26E2A59A85C4E52D71A5DC876FABEEAC /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/unzip.h; sourceTree = "<group>"; };
+		29386DD5708368DE9F922BA8AE93B402 /* XiaoYu_Bluetooth_Mediator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XiaoYu_Bluetooth_Mediator.framework; path = XiaoYu_Bluetooth_Mediator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2948EDF6F0DC4D79A8CEB8AD71DDD583 /* SecureDFUControlPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUControlPoint.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Characteristics/SecureDFUControlPoint.swift; sourceTree = "<group>"; };
+		29C8DA2C62CA8B158EFBB6FCEC0AC1C2 /* crc32.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = crc32.swift; path = iOSDFULibrary/Classes/Utilities/crc32.swift; sourceTree = "<group>"; };
+		2B4F84DEFB761F0742FBD58947F892AF /* Pods-XiaoYu_Bluetooth_Mediator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XiaoYu_Bluetooth_Mediator_Example-resources.sh"; sourceTree = "<group>"; };
+		2EA50C966188578F921D7F5AD99112EC /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = iOSDFULibrary/Classes/Utilities/Data.swift; sourceTree = "<group>"; };
+		3047E4C6FDD25C8611B51B3D8B266688 /* RJBluetooth_Mediator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RJBluetooth_Mediator-umbrella.h"; sourceTree = "<group>"; };
+		37D2EADFD9BF9C639BA98A40B0BEEEC3 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XiaoYu_Bluetooth_Mediator_Tests-umbrella.h"; sourceTree = "<group>"; };
+		411598995D5657659C6CBBF920F3399F /* SecureDFUExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUExecutor.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/DFU/SecureDFUExecutor.swift; sourceTree = "<group>"; };
+		4229205683BD7BB9CFB8AC7CCC6134F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43AA67141785516BEF5D0BA983028559 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		489F15EC278DD62539E4D2A1277B9132 /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
+		4995DB2B6E834FB1992D7CA460460DBE /* RJBluetooth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RJBluetooth.xcconfig; sourceTree = "<group>"; };
+		4B4778D7F2D04945D3314DF96FD11EF7 /* ManifestFirmwareInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManifestFirmwareInfo.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/ManifestFirmwareInfo.swift; sourceTree = "<group>"; };
+		4B68C6B933AE2DB211556D2CFD902C20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE50463AE1F37608ADE34F67F031339 /* RJBluetooth_Mediator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RJBluetooth_Mediator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4E8B9F9D1FD2E1FD12C3E08255E8B4 /* Pods-XiaoYu_Bluetooth_Mediator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XiaoYu_Bluetooth_Mediator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4E18B3D67C2E5C55096EB184FFC1A4A3 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
+		4F7C1C551A75C18E39753200DE51EB57 /* LegacyDFUPeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUPeripheralDelegate.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Peripherals/LegacyDFUPeripheralDelegate.swift; sourceTree = "<group>"; };
+		4FDBBEF1681C5E968A18902F13EF6A2D /* CTMediator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTMediator-dummy.m"; sourceTree = "<group>"; };
+		50598BDB7910A31D597B3C39A8FD26FB /* Target_Bluetooth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Target_Bluetooth.swift; path = RJBluetooth/Classes/Bluetooth/Target_Bluetooth.swift; sourceTree = "<group>"; };
+		537726D992F7CE7F28D94FDD4885C7A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55543F1E11C736B6C28D2F39F7BF76C5 /* SecureDFUPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUPacket.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Characteristics/SecureDFUPacket.swift; sourceTree = "<group>"; };
+		592B9E4CB88DD3D50869DFE274BBEE2A /* DFUPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheral.swift; sourceTree = "<group>"; };
+		593F1C3B570C1135B95CE4F9039C8AC9 /* Pods_XiaoYu_Bluetooth_Mediator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XiaoYu_Bluetooth_Mediator_Tests.framework; path = "Pods-XiaoYu_Bluetooth_Mediator_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59508D6787CC506EF88ECAB6224CACFE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		59F21EE1A13BBF5E64E5CF9055213D87 /* Pods-XiaoYu_Bluetooth_Mediator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XiaoYu_Bluetooth_Mediator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5BEEE62626CEE3C453BEE02CBFB1B4F5 /* DFUFirmware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUFirmware.swift; path = iOSDFULibrary/Classes/Implementation/Firmware/DFUFirmware.swift; sourceTree = "<group>"; };
+		6033E79B783279ABFA0BD350FADAA53A /* Pods-XiaoYu_Bluetooth_Mediator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XiaoYu_Bluetooth_Mediator_Example-dummy.m"; sourceTree = "<group>"; };
+		633970BEBD76CC4144AAA03D2372A9B7 /* RJBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RJBluetooth-umbrella.h"; sourceTree = "<group>"; };
+		63D39E7A1C0A16EDFD590DB364730959 /* Pods-XiaoYu_Bluetooth_Mediator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XiaoYu_Bluetooth_Mediator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		64DB5C20BE93837751D51C548A8C0D7E /* LegacyDFUPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Peripherals/LegacyDFUPeripheral.swift; sourceTree = "<group>"; };
+		6934C2C2D7E2BF5D9AD26F142F87894F /* LoggerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerDelegate.swift; path = iOSDFULibrary/Classes/Utilities/Logging/LoggerDelegate.swift; sourceTree = "<group>"; };
+		69DE4AF4000ECFC55DC7750B3F33C9F1 /* XiaoYu_Bluetooth_Mediator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XiaoYu_Bluetooth_Mediator-dummy.m"; sourceTree = "<group>"; };
+		6DBFFF2836DA17A2A192A582D929578C /* CTMediator+XiaoYu_Bluetooth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CTMediator+XiaoYu_Bluetooth.swift"; path = "XiaoYu_Bluetooth_Mediator/Classes/CTMediator+XiaoYu_Bluetooth.swift"; sourceTree = "<group>"; };
+		6EAFBA2016F17DFE5AC46134421B8D7D /* DFUControlPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUControlPoint.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUControlPoint.swift; sourceTree = "<group>"; };
+		6FFA8AC96BF184E6971BDDD7DAE60062 /* RJBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RJBluetooth.framework; path = RJBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70279BFE283DADCC69FC1C9FE943B103 /* Pods-XiaoYu_Bluetooth_Mediator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XiaoYu_Bluetooth_Mediator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7057DC25CE9B2132D91CBCAD5DA390AB /* CTMediator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTMediator-umbrella.h"; sourceTree = "<group>"; };
+		70676699480F017ACB482A6237F8F19C /* Pods-XiaoYu_Bluetooth_Mediator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XiaoYu_Bluetooth_Mediator_Example.modulemap"; sourceTree = "<group>"; };
+		70EE7EB210392BE5F762B461E395F513 /* RJBluetooth_Mediator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RJBluetooth_Mediator.framework; path = RJBluetooth_Mediator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		717DF8C99353A0037ED1D126E8C9F998 /* RJBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RJBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718E806B187FFFA2CBE7634652486ACB /* Pods-XiaoYu_Bluetooth_Mediator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XiaoYu_Bluetooth_Mediator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		71F288142EB4B1C00A3A0FDEE9272140 /* RJBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RJBluetooth-dummy.m"; sourceTree = "<group>"; };
+		7231A6A8A9A4D9963A45F92F918F38FE /* RJBluetooth_Mediator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RJBluetooth_Mediator.modulemap; sourceTree = "<group>"; };
+		72776E6FB94E69DC178CE1B1FA85844D /* DFUVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUVersion.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUVersion.swift; sourceTree = "<group>"; };
+		7616FCA1594A97045E8789F5767C1CFC /* Pods_XiaoYu_Bluetooth_Mediator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XiaoYu_Bluetooth_Mediator_Example.framework; path = "Pods-XiaoYu_Bluetooth_Mediator_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		766676B5C8ACF968E8F8384FF0286E36 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XiaoYu_Bluetooth_Mediator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		77BFCC91581900FD4AD80764FFCFFCF2 /* RJBluetooth_Mediator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RJBluetooth_Mediator-dummy.m"; sourceTree = "<group>"; };
+		7AE214594841882B158FFF2F82F9AA45 /* LegacyDFUService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUService.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Services/LegacyDFUService.swift; sourceTree = "<group>"; };
+		7BD82CBDCC442846EF1899FC169A9795 /* Manifest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manifest.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/Manifest.swift; sourceTree = "<group>"; };
+		7DC2B31009DFB424D4819482D46B5693 /* LegacyDFUServiceInitiator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUServiceInitiator.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/DFU/LegacyDFUServiceInitiator.swift; sourceTree = "<group>"; };
+		7FD1C1B5007EF4517C695E5626B14BA4 /* RJBluetooth_Mediator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RJBluetooth_Mediator-prefix.pch"; sourceTree = "<group>"; };
+		848D9A7EB6C1E06CA1C11845862A4182 /* iOSDFULibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSDFULibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F5894D22DF7D6C52574874C1F2D0F9 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
+		8A11DF242D8D4A76B53AC01212AC700A /* iOSDFULibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDFULibrary.xcconfig; sourceTree = "<group>"; };
+		9047AE9FFE1FC5E13C060B1DA3FAE857 /* SecureDFUPeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUPeripheralDelegate.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Peripheral/SecureDFUPeripheralDelegate.swift; sourceTree = "<group>"; };
+		90894310A08566A5FE21841572F27494 /* XiaoYu_Bluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XiaoYu_Bluetooth.modulemap; sourceTree = "<group>"; };
+		92D03A965AFC5E064C6EA8DCEE02916B /* CTMediator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTMediator.m; path = CTMediator/CTMediator/CTMediator.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		964595B61256E89153977EC46DF33276 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98DCF26CD902D902F054E47EA299E351 /* DFUPeripheralSelectorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralSelectorDelegate.swift; path = iOSDFULibrary/Classes/Implementation/DFUPeripheralSelectorDelegate.swift; sourceTree = "<group>"; };
+		9AA1588FBE36BCFFA483C4AFA68AB6AF /* CTMediator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CTMediator.modulemap; sourceTree = "<group>"; };
+		9C87F49AE486B5B3CCBED99F252FCFA1 /* Pods-XiaoYu_Bluetooth_Mediator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XiaoYu_Bluetooth_Mediator_Example-umbrella.h"; sourceTree = "<group>"; };
+		A00311EB888D5A1CFB866B8CEEA21A34 /* CTMediator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CTMediator.framework; path = CTMediator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05ACE672BC094FE4D8D43E0A0714285 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
+		A246B19388477B803B0B40307C6194C6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A2ACC40EBA4F60581BB4F7AB51974783 /* SecureDFUPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Peripheral/SecureDFUPeripheral.swift; sourceTree = "<group>"; };
+		A3C32721B1B6A6F743A7B967578CB50F /* DFUController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUController.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUController.swift; sourceTree = "<group>"; };
+		A585EB36D7660FF72EBC5498EC051044 /* DFUExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUExecutor.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUExecutor.swift; sourceTree = "<group>"; };
+		A699DD492C892C58F3A35C1408968F23 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XiaoYu_Bluetooth_Mediator_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		AAC7409CF18F5D14058E39708A65DABC /* Target_XiaoYu_BluetoothHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Target_XiaoYu_BluetoothHelper.swift; path = XiaoYu_Bluetooth/Classes/Target_XiaoYu_BluetoothHelper.swift; sourceTree = "<group>"; };
+		AC74C1BE4697E89FF813E54DF657E387 /* XiaoYu_Bluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XiaoYu_Bluetooth.framework; path = XiaoYu_Bluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0158B00D3A0D4A92DE1A578665031E2 /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
+		B197B9B3717C192D737E60BE75F51CE4 /* XiaoYu_Bluetooth_Mediator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XiaoYu_Bluetooth_Mediator-prefix.pch"; sourceTree = "<group>"; };
+		B2EB977176AFC686EB04030A0FDCC0E6 /* SecureDFUService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUService.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Services/SecureDFUService.swift; sourceTree = "<group>"; };
+		B43A931F2286F1F1E318B066FBF3D994 /* RJBluetooth_Mediator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RJBluetooth_Mediator.xcconfig; sourceTree = "<group>"; };
+		B4B5FEA46477F99900E65283238DEAA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B976C44C057A04E4AE8BBB5212AB4A9B /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
+		BA8199617B7294EC44CF7D88699611C8 /* RJSensorModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RJSensorModel.swift; path = XiaoYu_Bluetooth/Classes/RJSensorModel.swift; sourceTree = "<group>"; };
+		BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BC2A213F318D2B06B56FAC2627AB8A0F /* iOSDFULibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSDFULibrary.modulemap; sourceTree = "<group>"; };
+		BCDA7CEE1A9A52C8E872C1E8EDF922F1 /* IntelHex2BinConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntelHex2BinConverter.h; path = iOSDFULibrary/Classes/Utilities/HexToBinConverter/IntelHex2BinConverter.h; sourceTree = "<group>"; };
+		C0AB1276950FC7C1A04CC70B67181F84 /* Pods-XiaoYu_Bluetooth_Mediator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XiaoYu_Bluetooth_Mediator_Tests.modulemap"; sourceTree = "<group>"; };
+		C1D77A7FA08A52E727475076E2FE4973 /* LegacyDFUExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUExecutor.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/DFU/LegacyDFUExecutor.swift; sourceTree = "<group>"; };
+		C25EB61317012743317107F0884755F6 /* CTMediator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTMediator.xcconfig; sourceTree = "<group>"; };
+		C9BCAA7FF6034748104D5655B268C297 /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
+		CC3C091981F1934FA646B34D7C39B2FA /* DFUServiceSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceSelector.swift; path = iOSDFULibrary/Classes/Implementation/DFUSelector/DFUServiceSelector.swift; sourceTree = "<group>"; };
+		CD37D7CEA66E4AF4CD775F5B25007115 /* iOSDFULibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDFULibrary-prefix.pch"; sourceTree = "<group>"; };
+		CF5109F561C9E959A1014B0A4DF066C7 /* XiaoYu_Bluetooth_Mediator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XiaoYu_Bluetooth_Mediator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CF9BA1C5A94463560319257B5A9BD6F5 /* DFUServiceInitiator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceInitiator.swift; path = iOSDFULibrary/Classes/Implementation/DFUServiceInitiator.swift; sourceTree = "<group>"; };
+		D0393F2D6C28565D10310991C4FD43A2 /* XiaoYu_Bluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XiaoYu_Bluetooth-umbrella.h"; sourceTree = "<group>"; };
+		D289214AE2F377A4B04AD4AA6BCF883D /* DFUCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUCharacteristic.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUCharacteristic.swift; sourceTree = "<group>"; };
+		D31FC815D30B19FF055982E189A62095 /* XiaoYu_Bluetooth_Mediator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XiaoYu_Bluetooth_Mediator.modulemap; sourceTree = "<group>"; };
+		D5FAD8A5948F3140DE9749AECE348FB3 /* RJBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RJBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		D83EEB57A1798CC79CAD63D5F5FABD8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84BE482AB503E9D8FBCE341F5ED5E3B /* DFUPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPacket.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUPacket.swift; sourceTree = "<group>"; };
+		D8BD7BC58DF10E957BF3154E2D7FFBE5 /* Pods-XiaoYu_Bluetooth_Mediator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XiaoYu_Bluetooth_Mediator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DF516AFF30289D7CAE55DC3A3805C400 /* XiaoYu_Bluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XiaoYu_Bluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD6182882025BF62115E675C1CFF429 /* Zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
+		E0CA14CD4F0AE7E4E3748CAD7186A360 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A1FC8E24C62B14F7D6A48327A18543 /* RJFirmwareVersionModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RJFirmwareVersionModel.swift; path = XiaoYu_Bluetooth/Classes/RJFirmwareVersionModel.swift; sourceTree = "<group>"; };
+		E1AD6516F49A9F13A9EC12C39C454F1A /* LoggerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerHelper.swift; path = iOSDFULibrary/Classes/Utilities/Logging/LoggerHelper.swift; sourceTree = "<group>"; };
+		E1C29E881E83A4C5DBC0FE1F99EC898A /* RJBluetoothCentreManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RJBluetoothCentreManager.swift; path = RJBluetooth/Classes/Bluetooth/RJBluetoothCentreManager.swift; sourceTree = "<group>"; };
+		E32C08DDD8E9B6185FE96BFCF46D1EFB /* CTMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTMediator.h; path = CTMediator/CTMediator/CTMediator.h; sourceTree = "<group>"; };
+		E4705B1E05643F233E9C8E6B14E7088D /* IntelHex2BinConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IntelHex2BinConverter.m; path = iOSDFULibrary/Classes/Utilities/HexToBinConverter/IntelHex2BinConverter.m; sourceTree = "<group>"; };
+		E55D0D815C3E5B78BDDAC36F071D29D0 /* XiaoYu_Bluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XiaoYu_Bluetooth-prefix.pch"; sourceTree = "<group>"; };
+		E63CCA9A4FA092853207DDAA69EF97FE /* XiaoYu_Bluetooth_Mediator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XiaoYu_Bluetooth_Mediator-umbrella.h"; sourceTree = "<group>"; };
+		E7348A5FB5A307901D847A9BF9103EC8 /* XiaoYu_Bluetooth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XiaoYu_Bluetooth.xcconfig; sourceTree = "<group>"; };
+		E7EB67EFA09F0B67868435AE38E7908E /* DFUStreamBin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamBin.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamBin.swift; sourceTree = "<group>"; };
+		E89DB1D160E11D147B7A5A096A3C36E5 /* CTMediator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CTMediator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF5DE8889738594000A9F87A759665D /* DFUStreamZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamZip.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamZip.swift; sourceTree = "<group>"; };
+		EE1D403E35F4FE7DC2A4EEEC0263B7E0 /* Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Double.swift; path = iOSDFULibrary/Classes/Utilities/Double.swift; sourceTree = "<group>"; };
+		EE50DB3B1A425DD33CA54BA4378A4AE1 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
+		EE754B3C8D6D2610A019D818E8F1A37C /* DFUStarterPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStarterPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/DFUSelector/DFUStarterPeripheral.swift; sourceTree = "<group>"; };
+		F098B3893C3883F49D5E1E2A76E8B4E7 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
+		F1211D6191776F80C8FF7F7C6B739EDA /* iOSDFULibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDFULibrary-umbrella.h"; sourceTree = "<group>"; };
+		F1FFC81979600B0C33AD59A9E2525FC5 /* DFUServiceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceController.swift; path = iOSDFULibrary/Classes/Implementation/DFUServiceController.swift; sourceTree = "<group>"; };
+		F305BB8071AC73BD8D9CEDF7F117563E /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
+		F642290B621413A4A5B8303F7A1CE572 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XiaoYu_Bluetooth_Mediator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7C5FB98E2852CF9BE82CABC5C17723E /* XiaoYu_Bluetooth_Mediator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XiaoYu_Bluetooth_Mediator.xcconfig; sourceTree = "<group>"; };
+		F8D66B91BCC6C4E7BD8A45C99400DE32 /* iOSDFULibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSDFULibrary-dummy.m"; sourceTree = "<group>"; };
+		FA1FA8FA23CA9BD8F60AB8A44515F4FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA434B3826AC4437B0740E5CD235D850 /* DFUStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStream.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStream.swift; sourceTree = "<group>"; };
+		FA9DC54E5B4EF032083B01C1D1C22A93 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC95A4BDAF2F1D293C603D1CD6BCE549 /* DFUPeripheralSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralSelector.swift; path = iOSDFULibrary/Classes/Implementation/DFUPeripheralSelector.swift; sourceTree = "<group>"; };
+		FE448A4F42A83ECB897A2BA8BC528810 /* CTMediator+Bluetooth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CTMediator+Bluetooth.swift"; path = "RJBluetooth_Mediator/Classes/CTMediator+Bluetooth.swift"; sourceTree = "<group>"; };
+		FE605444ED5B8B4B03C99D57248BE928 /* DFUUuidHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUUuidHelper.swift; path = iOSDFULibrary/Classes/Implementation/DFUUuidHelper.swift; sourceTree = "<group>"; };
+		FFE9F8E667DDEA91E0750F4AE7290D6E /* RJBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RJBluetooth.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		166B633110CF5AD3D6C0EBDB7EE05151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E0D0A71E832E360B0F914B4071B686 /* Foundation.framework in Frameworks */,
+				75CCD1AFB095DE28CA16AD3978E42ABA /* Zip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA166A2F08CEA01D95FAC7A7BEA1093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43227085020536B85762386E2497F78B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517016D951357156B7328C107253E2F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546AF9556261E53713AE0F484C8E65AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F660A9B458B49B1DABFE59AB84FE342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A193C313475104B0377030251B672A0B /* CTMediator.framework in Frameworks */,
+				BDB8D9593DE577B81F17ECE5AC9512D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AAE369EEDA9B9B0F59E802161A9730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE495687A7CA12F14A1E6D27A8CA701 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF57AE4C0B3CA25F26FDFC9980E60EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1AE432D039010A0AA583DD4E682415 /* Foundation.framework in Frameworks */,
+				B7AC55A4081CA7DE2A3F979F30FF62E1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBBE6726606502674583D0C5CF2926B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12A6A586289332BE0A900CE15252AC9 /* CTMediator.framework in Frameworks */,
+				A62C8900ABC4C20E5ABA7041354276AC /* Foundation.framework in Frameworks */,
+				41C3BFE7BF1EE1B681F39396B28CB0F9 /* iOSDFULibrary.framework in Frameworks */,
+				AA4320174091A4F06F5EFC09A6C2B069 /* RJBluetooth.framework in Frameworks */,
+				845B0B924263DD3E19936C6E1FDD640A /* RJBluetooth_Mediator.framework in Frameworks */,
+				65936628A89780E7E9CC6EF1EC521413 /* Zip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE310A755025FC068F3F4242750E0042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0344677689A6DA8E4587C910251F5928 /* CTMediator.framework in Frameworks */,
+				C6EBD534959A104A52EF0B100F98A923 /* Foundation.framework in Frameworks */,
+				AD0784CB60B2EE06542D1C8744EF7ECE /* iOSDFULibrary.framework in Frameworks */,
+				EEEE859D6A105016A8B1FCDCD588AD1E /* RJBluetooth.framework in Frameworks */,
+				75BCDE12C494C9CC6DA22B39631A05C9 /* RJBluetooth_Mediator.framework in Frameworks */,
+				F32C169ADFF5EDD1A79E939BB65E53E1 /* XiaoYu_Bluetooth.framework in Frameworks */,
+				5EFF860F295330196E4D7403C75BC49A /* Zip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0964F683007B2648429987699F81EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49AE44F2325D1699D814D3332BCEFB6 /* CTMediator.framework in Frameworks */,
+				98DC31BC47B67BB08B10025506DDA54A /* Foundation.framework in Frameworks */,
+				0CA70E1704329D7A3B5FF2AEE39471DC /* RJBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14E71A4E66F9CA7E9F6911971B687FE0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D83EEB57A1798CC79CAD63D5F5FABD8E /* Info.plist */,
+				FFE9F8E667DDEA91E0750F4AE7290D6E /* RJBluetooth.modulemap */,
+				4995DB2B6E834FB1992D7CA460460DBE /* RJBluetooth.xcconfig */,
+				71F288142EB4B1C00A3A0FDEE9272140 /* RJBluetooth-dummy.m */,
+				D5FAD8A5948F3140DE9749AECE348FB3 /* RJBluetooth-prefix.pch */,
+				633970BEBD76CC4144AAA03D2372A9B7 /* RJBluetooth-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RJBluetooth";
+			sourceTree = "<group>";
+		};
+		184DA145FF2B7FDE71169FE1AB214E46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E89DB1D160E11D147B7A5A096A3C36E5 /* CTMediator.framework */,
+				848D9A7EB6C1E06CA1C11845862A4182 /* iOSDFULibrary.framework */,
+				717DF8C99353A0037ED1D126E8C9F998 /* RJBluetooth.framework */,
+				4BE50463AE1F37608ADE34F67F031339 /* RJBluetooth_Mediator.framework */,
+				DF516AFF30289D7CAE55DC3A3805C400 /* XiaoYu_Bluetooth.framework */,
+				FA9DC54E5B4EF032083B01C1D1C22A93 /* Zip.framework */,
+				3C88894BD03F9BF3EA9FE3692176F6AD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32BB674E3AA3B4DBD9F3D3412BF1C990 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				88F5894D22DF7D6C52574874C1F2D0F9 /* crypt.h */,
+				B976C44C057A04E4AE8BBB5212AB4A9B /* ioapi.c */,
+				EE50DB3B1A425DD33CA54BA4378A4AE1 /* ioapi.h */,
+				1778EA8420DAB17C90F1621DA3D43D25 /* QuickZip.swift */,
+				2311536B7707E5BD07421C99FB3CA68D /* unzip.c */,
+				26E2A59A85C4E52D71A5DC876FABEEAC /* unzip.h */,
+				0BB4147277729EA845C634C8DF075732 /* zip.c */,
+				4E18B3D67C2E5C55096EB184FFC1A4A3 /* zip.h */,
+				01563072AC8BF75C96417EDE5850E6B4 /* Zip.h */,
+				A05ACE672BC094FE4D8D43E0A0714285 /* Zip.swift */,
+				F098B3893C3883F49D5E1E2A76E8B4E7 /* ZipUtilities.swift */,
+				57F76E7F555C0EEB382AD680974DA7A3 /* Support Files */,
+			);
+			name = Zip;
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		3C88894BD03F9BF3EA9FE3692176F6AD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BB138D663C14F45BBC70A98CE44CBA01 /* Foundation.framework */,
+				0204568B168754D68AD7B6EC04943B49 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3DC72C1CB4D1C334E8E69B3BE819F148 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00311EB888D5A1CFB866B8CEEA21A34 /* CTMediator.framework */,
+				0220691BFD658C6B35AAFA1644AEA31A /* iOSDFULibrary.framework */,
+				7616FCA1594A97045E8789F5767C1CFC /* Pods_XiaoYu_Bluetooth_Mediator_Example.framework */,
+				593F1C3B570C1135B95CE4F9039C8AC9 /* Pods_XiaoYu_Bluetooth_Mediator_Tests.framework */,
+				6FFA8AC96BF184E6971BDDD7DAE60062 /* RJBluetooth.framework */,
+				70EE7EB210392BE5F762B461E395F513 /* RJBluetooth_Mediator.framework */,
+				AC74C1BE4697E89FF813E54DF657E387 /* XiaoYu_Bluetooth.framework */,
+				29386DD5708368DE9F922BA8AE93B402 /* XiaoYu_Bluetooth_Mediator.framework */,
+				964595B61256E89153977EC46DF33276 /* Zip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E32B47B2733EFFCE6EB90002AE54617 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4B5FEA46477F99900E65283238DEAA5 /* Info.plist */,
+				D31FC815D30B19FF055982E189A62095 /* XiaoYu_Bluetooth_Mediator.modulemap */,
+				F7C5FB98E2852CF9BE82CABC5C17723E /* XiaoYu_Bluetooth_Mediator.xcconfig */,
+				69DE4AF4000ECFC55DC7750B3F33C9F1 /* XiaoYu_Bluetooth_Mediator-dummy.m */,
+				B197B9B3717C192D737E60BE75F51CE4 /* XiaoYu_Bluetooth_Mediator-prefix.pch */,
+				E63CCA9A4FA092853207DDAA69EF97FE /* XiaoYu_Bluetooth_Mediator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XiaoYu_Bluetooth_Mediator";
+			sourceTree = "<group>";
+		};
+		4FB45D3DDF5990D08E42F86BFBF9F9ED /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D723A366A23642FCD707AC1A9AAD8CEA /* XiaoYu_Bluetooth_Mediator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		53B16A13FAF4FC06DBAB47FB8C6CA291 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73C1A1FB9094C6CE222C57680617A548 /* Pods-XiaoYu_Bluetooth_Mediator_Example */,
+				5E40742DFAA89111ECE7D6AED381991F /* Pods-XiaoYu_Bluetooth_Mediator_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		57F76E7F555C0EEB382AD680974DA7A3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				03F4BEF4B652C42E25285C97B19146B0 /* Info.plist */,
+				C9BCAA7FF6034748104D5655B268C297 /* Zip.modulemap */,
+				DFD6182882025BF62115E675C1CFF429 /* Zip.xcconfig */,
+				489F15EC278DD62539E4D2A1277B9132 /* Zip-dummy.m */,
+				F305BB8071AC73BD8D9CEDF7F117563E /* Zip-prefix.pch */,
+				B0158B00D3A0D4A92DE1A578665031E2 /* Zip-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Zip";
+			sourceTree = "<group>";
+		};
+		59AD4A7ED4F3EF67A8EC793FED8CE706 /* CTMediator */ = {
+			isa = PBXGroup;
+			children = (
+				E32C08DDD8E9B6185FE96BFCF46D1EFB /* CTMediator.h */,
+				92D03A965AFC5E064C6EA8DCEE02916B /* CTMediator.m */,
+				E95EF6A3E662EEA16A9FCE953A61E97E /* Support Files */,
+			);
+			name = CTMediator;
+			path = CTMediator;
+			sourceTree = "<group>";
+		};
+		5E40742DFAA89111ECE7D6AED381991F /* Pods-XiaoYu_Bluetooth_Mediator_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				537726D992F7CE7F28D94FDD4885C7A5 /* Info.plist */,
+				C0AB1276950FC7C1A04CC70B67181F84 /* Pods-XiaoYu_Bluetooth_Mediator_Tests.modulemap */,
+				766676B5C8ACF968E8F8384FF0286E36 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-acknowledgements.markdown */,
+				F642290B621413A4A5B8303F7A1CE572 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-acknowledgements.plist */,
+				1860D904698F4F6F90C8CEC323D310FA /* Pods-XiaoYu_Bluetooth_Mediator_Tests-dummy.m */,
+				A699DD492C892C58F3A35C1408968F23 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-frameworks.sh */,
+				1652E5BCD562C68638B5FF3922606293 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-resources.sh */,
+				37D2EADFD9BF9C639BA98A40B0BEEEC3 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-umbrella.h */,
+				15D959599F19D3A2EF446DA4E402E28A /* Pods-XiaoYu_Bluetooth_Mediator_Tests.debug.xcconfig */,
+				D8BD7BC58DF10E957BF3154E2D7FFBE5 /* Pods-XiaoYu_Bluetooth_Mediator_Tests.release.xcconfig */,
+			);
+			name = "Pods-XiaoYu_Bluetooth_Mediator_Tests";
+			path = "Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Tests";
+			sourceTree = "<group>";
+		};
+		65BF4999B272D4BF902B31B71273CC3C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43AA67141785516BEF5D0BA983028559 /* Info.plist */,
+				7231A6A8A9A4D9963A45F92F918F38FE /* RJBluetooth_Mediator.modulemap */,
+				B43A931F2286F1F1E318B066FBF3D994 /* RJBluetooth_Mediator.xcconfig */,
+				77BFCC91581900FD4AD80764FFCFFCF2 /* RJBluetooth_Mediator-dummy.m */,
+				7FD1C1B5007EF4517C695E5626B14BA4 /* RJBluetooth_Mediator-prefix.pch */,
+				3047E4C6FDD25C8611B51B3D8B266688 /* RJBluetooth_Mediator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RJBluetooth_Mediator";
+			sourceTree = "<group>";
+		};
+		73C1A1FB9094C6CE222C57680617A548 /* Pods-XiaoYu_Bluetooth_Mediator_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4B68C6B933AE2DB211556D2CFD902C20 /* Info.plist */,
+				70676699480F017ACB482A6237F8F19C /* Pods-XiaoYu_Bluetooth_Mediator_Example.modulemap */,
+				718E806B187FFFA2CBE7634652486ACB /* Pods-XiaoYu_Bluetooth_Mediator_Example-acknowledgements.markdown */,
+				70279BFE283DADCC69FC1C9FE943B103 /* Pods-XiaoYu_Bluetooth_Mediator_Example-acknowledgements.plist */,
+				6033E79B783279ABFA0BD350FADAA53A /* Pods-XiaoYu_Bluetooth_Mediator_Example-dummy.m */,
+				63D39E7A1C0A16EDFD590DB364730959 /* Pods-XiaoYu_Bluetooth_Mediator_Example-frameworks.sh */,
+				2B4F84DEFB761F0742FBD58947F892AF /* Pods-XiaoYu_Bluetooth_Mediator_Example-resources.sh */,
+				9C87F49AE486B5B3CCBED99F252FCFA1 /* Pods-XiaoYu_Bluetooth_Mediator_Example-umbrella.h */,
+				4D4E8B9F9D1FD2E1FD12C3E08255E8B4 /* Pods-XiaoYu_Bluetooth_Mediator_Example.debug.xcconfig */,
+				59F21EE1A13BBF5E64E5CF9055213D87 /* Pods-XiaoYu_Bluetooth_Mediator_Example.release.xcconfig */,
+			);
+			name = "Pods-XiaoYu_Bluetooth_Mediator_Example";
+			path = "Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				4FB45D3DDF5990D08E42F86BFBF9F9ED /* Development Pods */,
+				184DA145FF2B7FDE71169FE1AB214E46 /* Frameworks */,
+				D7F294C56E5328BED7570B3B5C385354 /* Pods */,
+				3DC72C1CB4D1C334E8E69B3BE819F148 /* Products */,
+				53B16A13FAF4FC06DBAB47FB8C6CA291 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8FBFD85C53E0F5D98603A4AEB8134713 /* XiaoYu_Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				08B7D5C8F524E6777A32A96243346A04 /* RJBluetoothHelper.swift */,
+				E1A1FC8E24C62B14F7D6A48327A18543 /* RJFirmwareVersionModel.swift */,
+				BA8199617B7294EC44CF7D88699611C8 /* RJSensorModel.swift */,
+				AAC7409CF18F5D14058E39708A65DABC /* Target_XiaoYu_BluetoothHelper.swift */,
+				EF27C9914407673FDD2108708C92AE80 /* Support Files */,
+			);
+			name = XiaoYu_Bluetooth;
+			path = XiaoYu_Bluetooth;
+			sourceTree = "<group>";
+		};
+		BB78C6357669DEC93192CA695C38CD67 /* iOSDFULibrary */ = {
+			isa = PBXGroup;
+			children = (
+				257AEEE487152BC78AFE08C84B93B69C /* ButtonlessDFU.swift */,
+				29C8DA2C62CA8B158EFBB6FCEC0AC1C2 /* crc32.swift */,
+				2EA50C966188578F921D7F5AD99112EC /* Data.swift */,
+				D289214AE2F377A4B04AD4AA6BCF883D /* DFUCharacteristic.swift */,
+				A3C32721B1B6A6F743A7B967578CB50F /* DFUController.swift */,
+				6EAFBA2016F17DFE5AC46134421B8D7D /* DFUControlPoint.swift */,
+				A585EB36D7660FF72EBC5498EC051044 /* DFUExecutor.swift */,
+				5BEEE62626CEE3C453BEE02CBFB1B4F5 /* DFUFirmware.swift */,
+				D84BE482AB503E9D8FBCE341F5ED5E3B /* DFUPacket.swift */,
+				592B9E4CB88DD3D50869DFE274BBEE2A /* DFUPeripheral.swift */,
+				0EC83DB1344A842FA83F8D05F62BFB1C /* DFUPeripheralDelegate.swift */,
+				FC95A4BDAF2F1D293C603D1CD6BCE549 /* DFUPeripheralSelector.swift */,
+				98DCF26CD902D902F054E47EA299E351 /* DFUPeripheralSelectorDelegate.swift */,
+				14E6F4C0C854834E8DB96FB147F25B36 /* DFUService.swift */,
+				F1FFC81979600B0C33AD59A9E2525FC5 /* DFUServiceController.swift */,
+				0DC7AACF24B00CB7EB79412BE8E8B37C /* DFUServiceDelegate.swift */,
+				CF9BA1C5A94463560319257B5A9BD6F5 /* DFUServiceInitiator.swift */,
+				CC3C091981F1934FA646B34D7C39B2FA /* DFUServiceSelector.swift */,
+				EE754B3C8D6D2610A019D818E8F1A37C /* DFUStarterPeripheral.swift */,
+				FA434B3826AC4437B0740E5CD235D850 /* DFUStream.swift */,
+				E7EB67EFA09F0B67868435AE38E7908E /* DFUStreamBin.swift */,
+				07A7C7AE27F7488FAFDFC63D17DA4F97 /* DFUStreamHex.swift */,
+				ECF5DE8889738594000A9F87A759665D /* DFUStreamZip.swift */,
+				FE605444ED5B8B4B03C99D57248BE928 /* DFUUuidHelper.swift */,
+				72776E6FB94E69DC178CE1B1FA85844D /* DFUVersion.swift */,
+				EE1D403E35F4FE7DC2A4EEEC0263B7E0 /* Double.swift */,
+				BCDA7CEE1A9A52C8E872C1E8EDF922F1 /* IntelHex2BinConverter.h */,
+				E4705B1E05643F233E9C8E6B14E7088D /* IntelHex2BinConverter.m */,
+				C1D77A7FA08A52E727475076E2FE4973 /* LegacyDFUExecutor.swift */,
+				64DB5C20BE93837751D51C548A8C0D7E /* LegacyDFUPeripheral.swift */,
+				4F7C1C551A75C18E39753200DE51EB57 /* LegacyDFUPeripheralDelegate.swift */,
+				7AE214594841882B158FFF2F82F9AA45 /* LegacyDFUService.swift */,
+				7DC2B31009DFB424D4819482D46B5693 /* LegacyDFUServiceInitiator.swift */,
+				6934C2C2D7E2BF5D9AD26F142F87894F /* LoggerDelegate.swift */,
+				E1AD6516F49A9F13A9EC12C39C454F1A /* LoggerHelper.swift */,
+				7BD82CBDCC442846EF1899FC169A9795 /* Manifest.swift */,
+				4B4778D7F2D04945D3314DF96FD11EF7 /* ManifestFirmwareInfo.swift */,
+				2948EDF6F0DC4D79A8CEB8AD71DDD583 /* SecureDFUControlPoint.swift */,
+				411598995D5657659C6CBBF920F3399F /* SecureDFUExecutor.swift */,
+				55543F1E11C736B6C28D2F39F7BF76C5 /* SecureDFUPacket.swift */,
+				A2ACC40EBA4F60581BB4F7AB51974783 /* SecureDFUPeripheral.swift */,
+				9047AE9FFE1FC5E13C060B1DA3FAE857 /* SecureDFUPeripheralDelegate.swift */,
+				B2EB977176AFC686EB04030A0FDCC0E6 /* SecureDFUService.swift */,
+				12675F37D43F67B7D1643CD8835FB52F /* SecureDFUServiceInitiator.swift */,
+				094096939B892CF45A5ABFDA72C2E58B /* SoftdeviceBootloaderInfo.swift */,
+				191D8303261DA00345D3F8631FD634E4 /* ZipArchive.swift */,
+				D7E8C7C55A81E9E9191E24CC6AA1BC9C /* Support Files */,
+			);
+			name = iOSDFULibrary;
+			path = iOSDFULibrary;
+			sourceTree = "<group>";
+		};
+		D334A46D5D535054E1C8B484F536EAB0 /* RJBluetooth_Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				FE448A4F42A83ECB897A2BA8BC528810 /* CTMediator+Bluetooth.swift */,
+				65BF4999B272D4BF902B31B71273CC3C /* Support Files */,
+			);
+			name = RJBluetooth_Mediator;
+			path = RJBluetooth_Mediator;
+			sourceTree = "<group>";
+		};
+		D723A366A23642FCD707AC1A9AAD8CEA /* XiaoYu_Bluetooth_Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				6DBFFF2836DA17A2A192A582D929578C /* CTMediator+XiaoYu_Bluetooth.swift */,
+				F7446655311ED5246C42FEE21AE5B7C9 /* Pod */,
+				4E32B47B2733EFFCE6EB90002AE54617 /* Support Files */,
+			);
+			name = XiaoYu_Bluetooth_Mediator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D7E8C7C55A81E9E9191E24CC6AA1BC9C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4229205683BD7BB9CFB8AC7CCC6134F0 /* Info.plist */,
+				BC2A213F318D2B06B56FAC2627AB8A0F /* iOSDFULibrary.modulemap */,
+				8A11DF242D8D4A76B53AC01212AC700A /* iOSDFULibrary.xcconfig */,
+				F8D66B91BCC6C4E7BD8A45C99400DE32 /* iOSDFULibrary-dummy.m */,
+				CD37D7CEA66E4AF4CD775F5B25007115 /* iOSDFULibrary-prefix.pch */,
+				F1211D6191776F80C8FF7F7C6B739EDA /* iOSDFULibrary-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iOSDFULibrary";
+			sourceTree = "<group>";
+		};
+		D7F294C56E5328BED7570B3B5C385354 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59AD4A7ED4F3EF67A8EC793FED8CE706 /* CTMediator */,
+				BB78C6357669DEC93192CA695C38CD67 /* iOSDFULibrary */,
+				F33E5F9B200FDE02C6608326B13DE7C9 /* RJBluetooth */,
+				D334A46D5D535054E1C8B484F536EAB0 /* RJBluetooth_Mediator */,
+				8FBFD85C53E0F5D98603A4AEB8134713 /* XiaoYu_Bluetooth */,
+				32BB674E3AA3B4DBD9F3D3412BF1C990 /* Zip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E95EF6A3E662EEA16A9FCE953A61E97E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AA1588FBE36BCFFA483C4AFA68AB6AF /* CTMediator.modulemap */,
+				C25EB61317012743317107F0884755F6 /* CTMediator.xcconfig */,
+				4FDBBEF1681C5E968A18902F13EF6A2D /* CTMediator-dummy.m */,
+				01E4EAB57D5FCCE7F64D54FB18A39901 /* CTMediator-prefix.pch */,
+				7057DC25CE9B2132D91CBCAD5DA390AB /* CTMediator-umbrella.h */,
+				FA1FA8FA23CA9BD8F60AB8A44515F4FA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CTMediator";
+			sourceTree = "<group>";
+		};
+		EF27C9914407673FDD2108708C92AE80 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA14CD4F0AE7E4E3748CAD7186A360 /* Info.plist */,
+				90894310A08566A5FE21841572F27494 /* XiaoYu_Bluetooth.modulemap */,
+				E7348A5FB5A307901D847A9BF9103EC8 /* XiaoYu_Bluetooth.xcconfig */,
+				21C3FFAB2FFCCE3F404E7C25A6759737 /* XiaoYu_Bluetooth-dummy.m */,
+				E55D0D815C3E5B78BDDAC36F071D29D0 /* XiaoYu_Bluetooth-prefix.pch */,
+				D0393F2D6C28565D10310991C4FD43A2 /* XiaoYu_Bluetooth-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XiaoYu_Bluetooth";
+			sourceTree = "<group>";
+		};
+		F33E5F9B200FDE02C6608326B13DE7C9 /* RJBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				E1C29E881E83A4C5DBC0FE1F99EC898A /* RJBluetoothCentreManager.swift */,
+				2149961C1BC598BDDE3BC4A6BCF590D5 /* RJBluetoothManager.swift */,
+				121221870D85CE226C39035D830E29C5 /* RJBluetoothPeripheralManager.swift */,
+				50598BDB7910A31D597B3C39A8FD26FB /* Target_Bluetooth.swift */,
+				14E71A4E66F9CA7E9F6911971B687FE0 /* Support Files */,
+			);
+			name = RJBluetooth;
+			path = RJBluetooth;
+			sourceTree = "<group>";
+		};
+		F7446655311ED5246C42FEE21AE5B7C9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A246B19388477B803B0B40307C6194C6 /* LICENSE */,
+				59508D6787CC506EF88ECAB6224CACFE /* README.md */,
+				CF5109F561C9E959A1014B0A4DF066C7 /* XiaoYu_Bluetooth_Mediator.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		000F2AAA018022EAC017735186225EC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4276D9C94B010809216BB2EB1539FA0C /* CTMediator-umbrella.h in Headers */,
+				9980D1F1A0D1B96EDA265B24BC6B544A /* CTMediator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FBAB6E07C97D7A74DBC87767BA67C26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA3E96E974881A5CB9F618D92B3173A /* XiaoYu_Bluetooth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A088FED55D358FCED8CFD7999426ECD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939DE7B5BC99416279154F78E4BE9F64 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554201DD20E44764EBB9C27E3E4F470F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF5E209E622CCBA67E2C23935542778 /* RJBluetooth_Mediator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761D058EC5822E7660C3BDBBB68CF501 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C2E8F7B37E1043721502C4C6AA7A77 /* crypt.h in Headers */,
+				0BF245096057F04DE5549EBAC5BD140F /* ioapi.h in Headers */,
+				085331C43DA12EF7B3B02CE4FAEBBB34 /* unzip.h in Headers */,
+				80E3E4D4CE1033A5A5E2E73DF19CFA80 /* Zip-umbrella.h in Headers */,
+				4ADE5A895CE14B798E248FED8992AC7F /* Zip.h in Headers */,
+				75A794E99509DFDE75C0CBBF02D235BF /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DA7A9DDDF4827CA44184A417D4D8CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0331B5B1668F7FAF11CA3D33205EA9F9 /* Pods-XiaoYu_Bluetooth_Mediator_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C70CEBFDE40DF2089A674DA46FAC38C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65335749CFA4902D02904E052A43E70 /* IntelHex2BinConverter.h in Headers */,
+				7E680C74870B903B261F3799E3F3B5A7 /* iOSDFULibrary-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E019369DCB716FF1AAE7ADFF85547665 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1A6D15EF3D6FB6892B8D5FB5E39FC9 /* RJBluetooth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C2BF7E4D3EC390BD0D669D7EA66BB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FBFC52CE8D704DEDB4F1D127DEF818 /* XiaoYu_Bluetooth_Mediator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0865FFA6A85B340373FFFFFC737505A5 /* RJBluetooth_Mediator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3566EFF3B2B39DEF4D8345A9E9F123C /* Build configuration list for PBXNativeTarget "RJBluetooth_Mediator" */;
+			buildPhases = (
+				2CF5FBC48877C74318A4B7479BF3024F /* Sources */,
+				E0964F683007B2648429987699F81EFB /* Frameworks */,
+				554201DD20E44764EBB9C27E3E4F470F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F0B4BABAE71DEAA452639A149467890 /* PBXTargetDependency */,
+				BE0F79147770DC107BC2C4CB05263696 /* PBXTargetDependency */,
+			);
+			name = RJBluetooth_Mediator;
+			productName = RJBluetooth_Mediator;
+			productReference = 70EE7EB210392BE5F762B461E395F513 /* RJBluetooth_Mediator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13AD269144E27851A8231432CC6E101E /* Pods-XiaoYu_Bluetooth_Mediator_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12BDFCFAD447AB627A684361BEE6A00 /* Build configuration list for PBXNativeTarget "Pods-XiaoYu_Bluetooth_Mediator_Tests" */;
+			buildPhases = (
+				44B01DD5B8C00F596C5C6D603F0B79B9 /* Sources */,
+				2CA166A2F08CEA01D95FAC7A7BEA1093 /* Frameworks */,
+				4A088FED55D358FCED8CFD7999426ECD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-XiaoYu_Bluetooth_Mediator_Tests";
+			productName = "Pods-XiaoYu_Bluetooth_Mediator_Tests";
+			productReference = 593F1C3B570C1135B95CE4F9039C8AC9 /* Pods_XiaoYu_Bluetooth_Mediator_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		23F522D463E3C8BD0A74E0088D7BC6AA /* XiaoYu_Bluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B30E710534CA4A148577E7097D0F40F /* Build configuration list for PBXNativeTarget "XiaoYu_Bluetooth" */;
+			buildPhases = (
+				043AB2A38B1003241118364ADB84C923 /* Sources */,
+				DBBE6726606502674583D0C5CF2926B8 /* Frameworks */,
+				1FBAB6E07C97D7A74DBC87767BA67C26 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11F7F067119B346A8F65C78CAC31EC67 /* PBXTargetDependency */,
+				86AC88255813818CC7D957F8B51541B2 /* PBXTargetDependency */,
+				7AAA78B001211D7720717ADBD9EB05D9 /* PBXTargetDependency */,
+				AAC1C253515A397B33AAD33A67255DC7 /* PBXTargetDependency */,
+				4274DAB8248692BCDF83EF92C470AC23 /* PBXTargetDependency */,
+			);
+			name = XiaoYu_Bluetooth;
+			productName = XiaoYu_Bluetooth;
+			productReference = AC74C1BE4697E89FF813E54DF657E387 /* XiaoYu_Bluetooth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		248B87A6BCD655BB8F6CFE5413F00CA1 /* Zip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01A4B7E92C4363610572DB683149FEEE /* Build configuration list for PBXNativeTarget "Zip" */;
+			buildPhases = (
+				685EEAE57CF17F4B69BE366B38A96758 /* Sources */,
+				75AAE369EEDA9B9B0F59E802161A9730 /* Frameworks */,
+				761D058EC5822E7660C3BDBBB68CF501 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zip;
+			productName = Zip;
+			productReference = 964595B61256E89153977EC46DF33276 /* Zip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		422A4F98C8BF2B096F6A7C1D5D80FF83 /* Pods-XiaoYu_Bluetooth_Mediator_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1980D00135F531F15ED0643BDFB1304B /* Build configuration list for PBXNativeTarget "Pods-XiaoYu_Bluetooth_Mediator_Example" */;
+			buildPhases = (
+				809A80D89BF5A6FC40F5B1A61FAFF831 /* Sources */,
+				517016D951357156B7328C107253E2F2 /* Frameworks */,
+				95DA7A9DDDF4827CA44184A417D4D8CD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE1D612EFB5E9DC98F9B32E144D70537 /* PBXTargetDependency */,
+				DFC20C4BA434820E88D05FD6B9AA654A /* PBXTargetDependency */,
+				EB706093521DF3248B95CB1744B72022 /* PBXTargetDependency */,
+				89B888EACF1575598C6ACA5208C50CD1 /* PBXTargetDependency */,
+				ED04DE23A97C163AEEE0164E2B2A150F /* PBXTargetDependency */,
+				9D8447CFEFF292E04F30B40B75267C34 /* PBXTargetDependency */,
+				C28BAF34A91192779410D30B7FBA2C46 /* PBXTargetDependency */,
+			);
+			name = "Pods-XiaoYu_Bluetooth_Mediator_Example";
+			productName = "Pods-XiaoYu_Bluetooth_Mediator_Example";
+			productReference = 7616FCA1594A97045E8789F5767C1CFC /* Pods_XiaoYu_Bluetooth_Mediator_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55F026717CC64042402D86EC73B62B64 /* XiaoYu_Bluetooth_Mediator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975496D3BF524F00B1B4E0D0760B7C5A /* Build configuration list for PBXNativeTarget "XiaoYu_Bluetooth_Mediator" */;
+			buildPhases = (
+				D83ABD0ECA3E4C6F8D40ED9ED64FFA39 /* Sources */,
+				DE310A755025FC068F3F4242750E0042 /* Frameworks */,
+				E8C2BF7E4D3EC390BD0D669D7EA66BB6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6AA305C96DC4846B681F023A458145E /* PBXTargetDependency */,
+				6AFCE653FA10E27F450271BE58D80359 /* PBXTargetDependency */,
+				70051F24ECEFB7CEC989271B61F0EAA4 /* PBXTargetDependency */,
+				D5940A729D0D0AF21CE9A9164224B079 /* PBXTargetDependency */,
+				51B2C29D71A271A842D48A8EE4C0DDC4 /* PBXTargetDependency */,
+				F73172551CD4DC0279941610DE14DCC1 /* PBXTargetDependency */,
+			);
+			name = XiaoYu_Bluetooth_Mediator;
+			productName = XiaoYu_Bluetooth_Mediator;
+			productReference = 29386DD5708368DE9F922BA8AE93B402 /* XiaoYu_Bluetooth_Mediator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		685EB18B6B251DBD96963DFED5E895BB /* CTMediator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67A7DBAB793AE14E5B11F08DE3A08B40 /* Build configuration list for PBXNativeTarget "CTMediator" */;
+			buildPhases = (
+				9C950E5127B4AA5235ABEC3C19ADC860 /* Sources */,
+				AF57AE4C0B3CA25F26FDFC9980E60EEB /* Frameworks */,
+				000F2AAA018022EAC017735186225EC4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTMediator;
+			productName = CTMediator;
+			productReference = A00311EB888D5A1CFB866B8CEEA21A34 /* CTMediator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C665CAE90AF7480F709AF8223B4D55D /* RJBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 695A3771616491D2CAC7AC1739118432 /* Build configuration list for PBXNativeTarget "RJBluetooth" */;
+			buildPhases = (
+				4ABBFBF0CACBB3F76B703F097A1C2F2F /* Sources */,
+				5F660A9B458B49B1DABFE59AB84FE342 /* Frameworks */,
+				E019369DCB716FF1AAE7ADFF85547665 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE2AA74D8BE27004C8EA6F1AAACCA308 /* PBXTargetDependency */,
+			);
+			name = RJBluetooth;
+			productName = RJBluetooth;
+			productReference = 6FFA8AC96BF184E6971BDDD7DAE60062 /* RJBluetooth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD94DA638B5BB880CCE6B0C7FFE923BB /* iOSDFULibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94FE312D6627E3607EB1CB73C3BF7E39 /* Build configuration list for PBXNativeTarget "iOSDFULibrary" */;
+			buildPhases = (
+				F1611DF883E9D153FBF36A59D80DC3C4 /* Sources */,
+				166B633110CF5AD3D6C0EBDB7EE05151 /* Frameworks */,
+				9C70CEBFDE40DF2089A674DA46FAC38C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92C6EEB2BDBA5BFE6EB2074FC08520AA /* PBXTargetDependency */,
+			);
+			name = iOSDFULibrary;
+			productName = iOSDFULibrary;
+			productReference = 0220691BFD658C6B35AAFA1644AEA31A /* iOSDFULibrary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3DC72C1CB4D1C334E8E69B3BE819F148 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				685EB18B6B251DBD96963DFED5E895BB /* CTMediator */,
+				FD94DA638B5BB880CCE6B0C7FFE923BB /* iOSDFULibrary */,
+				422A4F98C8BF2B096F6A7C1D5D80FF83 /* Pods-XiaoYu_Bluetooth_Mediator_Example */,
+				13AD269144E27851A8231432CC6E101E /* Pods-XiaoYu_Bluetooth_Mediator_Tests */,
+				8C665CAE90AF7480F709AF8223B4D55D /* RJBluetooth */,
+				0865FFA6A85B340373FFFFFC737505A5 /* RJBluetooth_Mediator */,
+				23F522D463E3C8BD0A74E0088D7BC6AA /* XiaoYu_Bluetooth */,
+				55F026717CC64042402D86EC73B62B64 /* XiaoYu_Bluetooth_Mediator */,
+				248B87A6BCD655BB8F6CFE5413F00CA1 /* Zip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043AB2A38B1003241118364ADB84C923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F41FAB5032237AE862725E1485C138 /* RJBluetoothHelper.swift in Sources */,
+				9843A075DD70CC40DBF29EA684B53488 /* RJFirmwareVersionModel.swift in Sources */,
+				01D3E70378D34021F32C9737BACA6A1E /* RJSensorModel.swift in Sources */,
+				DF88AEBD48899600EE538E2A2FA4EA56 /* Target_XiaoYu_BluetoothHelper.swift in Sources */,
+				EA7A3584D8077E62F99BBA13AAC1D88C /* XiaoYu_Bluetooth-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF5FBC48877C74318A4B7479BF3024F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE19C0BA3110364242EC9B2DA7E355EF /* CTMediator+Bluetooth.swift in Sources */,
+				5A8EBD0D3FB0753C67306D43FF3263D0 /* RJBluetooth_Mediator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B01DD5B8C00F596C5C6D603F0B79B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3243DBD2046770748AB49416B27921C7 /* Pods-XiaoYu_Bluetooth_Mediator_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ABBFBF0CACBB3F76B703F097A1C2F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE6E167DFD62A7C151021EBD1D6FF05 /* RJBluetooth-dummy.m in Sources */,
+				1C8E9EF528481B8C7F9306DE710775ED /* RJBluetoothCentreManager.swift in Sources */,
+				294DB792E4E5B7022E6E5E9BE158FAA9 /* RJBluetoothManager.swift in Sources */,
+				3CDA233938A480A826AD054AEEC1738F /* RJBluetoothPeripheralManager.swift in Sources */,
+				D9225A6543F9E1BF738B99114950D7C7 /* Target_Bluetooth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685EEAE57CF17F4B69BE366B38A96758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818199C7E04B7AD496D5DA8928681958 /* ioapi.c in Sources */,
+				FB0BBFCC4C884C71774200309BC06CA7 /* QuickZip.swift in Sources */,
+				4242E66AA11019A5DF2929992C178E52 /* unzip.c in Sources */,
+				F1A3C72967A340C9F562D16CA616877B /* Zip-dummy.m in Sources */,
+				F762D15F4B219DAFD0BE555C41075A75 /* zip.c in Sources */,
+				07A368988A07DC359E1374C8DCE15044 /* Zip.swift in Sources */,
+				100C2DEEABA2CCE49B37349172C3969F /* ZipUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809A80D89BF5A6FC40F5B1A61FAFF831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA93F96527D4CBA4B3B15530899F5D9A /* Pods-XiaoYu_Bluetooth_Mediator_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C950E5127B4AA5235ABEC3C19ADC860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4569DA131C568C785D747146B842D4D /* CTMediator-dummy.m in Sources */,
+				1F3AB48B790349971623E34565F09B4C /* CTMediator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83ABD0ECA3E4C6F8D40ED9ED64FFA39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B4F2A84DE8BAF658583DBC725815E6 /* CTMediator+XiaoYu_Bluetooth.swift in Sources */,
+				8CE5DE48CCE6B2DEC4DDCD4ABB5125F3 /* XiaoYu_Bluetooth_Mediator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1611DF883E9D153FBF36A59D80DC3C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D63B56231F263979AE42F41B208403E /* ButtonlessDFU.swift in Sources */,
+				35C640C8B96046096DC19BC62462C466 /* crc32.swift in Sources */,
+				D5ED41435058C6898533E1BCDF5DFC87 /* Data.swift in Sources */,
+				6F2B877A78147A6BCA098525291EAA87 /* DFUCharacteristic.swift in Sources */,
+				FC9DD23AC70BB0B6C40B751979591AE2 /* DFUController.swift in Sources */,
+				0376B76DF466AB67D85AC56205BC96E1 /* DFUControlPoint.swift in Sources */,
+				1CFCA9200134B22D6EA485F895E84586 /* DFUExecutor.swift in Sources */,
+				35B3EAC0D7A53BD7EB42A3D5D83511DE /* DFUFirmware.swift in Sources */,
+				9E794BF82B3ED9550644DEB1A0590B1C /* DFUPacket.swift in Sources */,
+				49075417D9DD248DAF69CFB02EAC85F1 /* DFUPeripheral.swift in Sources */,
+				6026974167FADA6810F743996412BCDF /* DFUPeripheralDelegate.swift in Sources */,
+				6978C51F53A56BC9BFF92124BA0C8CAE /* DFUPeripheralSelector.swift in Sources */,
+				295902683B296D6856D944DA628548B5 /* DFUPeripheralSelectorDelegate.swift in Sources */,
+				3768F167F1A4BC430F735F4756D6A66C /* DFUService.swift in Sources */,
+				BD1B39D55E3595900715CE79828862EF /* DFUServiceController.swift in Sources */,
+				2E438E70AC7981207518624AEEBFF1A7 /* DFUServiceDelegate.swift in Sources */,
+				DD7F2FBEE2B287C50A0B09AB881DE137 /* DFUServiceInitiator.swift in Sources */,
+				6A4135BF13E4A778D2268C5275F71CA0 /* DFUServiceSelector.swift in Sources */,
+				7C8E98C8113F561C2A2FD1366182611E /* DFUStarterPeripheral.swift in Sources */,
+				AC5A5C2F64B2180AC8CB53440F671D5F /* DFUStream.swift in Sources */,
+				5EB72FA05AF8DD7B59BF2AB7BDEF4F37 /* DFUStreamBin.swift in Sources */,
+				35C82F7D3B17AE0C232B34C14B22A735 /* DFUStreamHex.swift in Sources */,
+				63AEEF74577DC9BB66D4BDE5E1DE0D3B /* DFUStreamZip.swift in Sources */,
+				09757D4A09D82DB5AB6CAAF58A8D5598 /* DFUUuidHelper.swift in Sources */,
+				3FAA44005CB95AC4BCA1D89424C0A448 /* DFUVersion.swift in Sources */,
+				3913AC760D353895E877539DC544737E /* Double.swift in Sources */,
+				AB92A35AEA6EE03F49C1B34A6659B367 /* IntelHex2BinConverter.m in Sources */,
+				71023477963763072A1B93743C1A4A3D /* iOSDFULibrary-dummy.m in Sources */,
+				8F706AD6A20B1B1495AEDF69F628E396 /* LegacyDFUExecutor.swift in Sources */,
+				F79C0B49B42178F828A8C281E7F12D36 /* LegacyDFUPeripheral.swift in Sources */,
+				CE5B8DBE60FD2A97DF47E61C66695219 /* LegacyDFUPeripheralDelegate.swift in Sources */,
+				D9C76078839D501926FC1FC6203A4E64 /* LegacyDFUService.swift in Sources */,
+				AF8795CB9204E1DF137674DE0A45493F /* LegacyDFUServiceInitiator.swift in Sources */,
+				430951CFF202BEC184A45FC1071C2AEC /* LoggerDelegate.swift in Sources */,
+				EFB73EF8638AFC5858594DB3237D18AF /* LoggerHelper.swift in Sources */,
+				CD144E29E31D997AF0FDB3C63D988612 /* Manifest.swift in Sources */,
+				20663B32934F2D9FDDDD5A810A7178D6 /* ManifestFirmwareInfo.swift in Sources */,
+				7455F364DA5C1F58FCC3D5EE7585C1D5 /* SecureDFUControlPoint.swift in Sources */,
+				0F71613F5085C65E9F0C51C2D8836D63 /* SecureDFUExecutor.swift in Sources */,
+				07AFDBBBEFC523435016C643E1028E89 /* SecureDFUPacket.swift in Sources */,
+				AC27A653E388A8C62AB804A86D68A809 /* SecureDFUPeripheral.swift in Sources */,
+				824FC32E6BE344CCF58EC775D4A7C375 /* SecureDFUPeripheralDelegate.swift in Sources */,
+				E6DFD7B4C24737C8E51DB20957DDBC9B /* SecureDFUService.swift in Sources */,
+				CF8083A528F7D7AA109A1AB8F052249D /* SecureDFUServiceInitiator.swift in Sources */,
+				FA394D823F607D1DFCDA4C613E4D745C /* SoftdeviceBootloaderInfo.swift in Sources */,
+				3E810EEED4FA7C26EE8B04EDF8F27688 /* ZipArchive.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11F7F067119B346A8F65C78CAC31EC67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTMediator;
+			target = 685EB18B6B251DBD96963DFED5E895BB /* CTMediator */;
+			targetProxy = 807B8C53F60DF8DD2A81E33E7C0AB31B /* PBXContainerItemProxy */;
+		};
+		4274DAB8248692BCDF83EF92C470AC23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSDFULibrary;
+			target = FD94DA638B5BB880CCE6B0C7FFE923BB /* iOSDFULibrary */;
+			targetProxy = B9E06112E096489665694C2DEA0FF00D /* PBXContainerItemProxy */;
+		};
+		51B2C29D71A271A842D48A8EE4C0DDC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = 248B87A6BCD655BB8F6CFE5413F00CA1 /* Zip */;
+			targetProxy = 87F540DE6461BCED481AC8549338A6E2 /* PBXContainerItemProxy */;
+		};
+		6AFCE653FA10E27F450271BE58D80359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RJBluetooth;
+			target = 8C665CAE90AF7480F709AF8223B4D55D /* RJBluetooth */;
+			targetProxy = FDE97E173B0B4886720B3895CE36AFAB /* PBXContainerItemProxy */;
+		};
+		70051F24ECEFB7CEC989271B61F0EAA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RJBluetooth_Mediator;
+			target = 0865FFA6A85B340373FFFFFC737505A5 /* RJBluetooth_Mediator */;
+			targetProxy = 65FEAC48DCE6A5AC86A1CBE25278A451 /* PBXContainerItemProxy */;
+		};
+		7AAA78B001211D7720717ADBD9EB05D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RJBluetooth_Mediator;
+			target = 0865FFA6A85B340373FFFFFC737505A5 /* RJBluetooth_Mediator */;
+			targetProxy = 53D0596A9ED1BF55ED1CABA5396550BC /* PBXContainerItemProxy */;
+		};
+		86AC88255813818CC7D957F8B51541B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RJBluetooth;
+			target = 8C665CAE90AF7480F709AF8223B4D55D /* RJBluetooth */;
+			targetProxy = 948A1978DE8B29FD9142F134A7D171E7 /* PBXContainerItemProxy */;
+		};
+		89B888EACF1575598C6ACA5208C50CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XiaoYu_Bluetooth;
+			target = 23F522D463E3C8BD0A74E0088D7BC6AA /* XiaoYu_Bluetooth */;
+			targetProxy = 100897AD6DFE110BFC4A863984AE52EC /* PBXContainerItemProxy */;
+		};
+		8F0B4BABAE71DEAA452639A149467890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTMediator;
+			target = 685EB18B6B251DBD96963DFED5E895BB /* CTMediator */;
+			targetProxy = 8C6C964CCE206881E8307833BFF3CD2F /* PBXContainerItemProxy */;
+		};
+		92C6EEB2BDBA5BFE6EB2074FC08520AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = 248B87A6BCD655BB8F6CFE5413F00CA1 /* Zip */;
+			targetProxy = 498BC017C2DC03908D1B63E9E7E0D321 /* PBXContainerItemProxy */;
+		};
+		9D8447CFEFF292E04F30B40B75267C34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = 248B87A6BCD655BB8F6CFE5413F00CA1 /* Zip */;
+			targetProxy = 0848E13DC039DEE96A37B11F9EBA1582 /* PBXContainerItemProxy */;
+		};
+		AAC1C253515A397B33AAD33A67255DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = 248B87A6BCD655BB8F6CFE5413F00CA1 /* Zip */;
+			targetProxy = A530D6DE035BB61143565142E81E242F /* PBXContainerItemProxy */;
+		};
+		BE0F79147770DC107BC2C4CB05263696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RJBluetooth;
+			target = 8C665CAE90AF7480F709AF8223B4D55D /* RJBluetooth */;
+			targetProxy = 0E982A07BA05889645A908F92CFE5DB5 /* PBXContainerItemProxy */;
+		};
+		BE2AA74D8BE27004C8EA6F1AAACCA308 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTMediator;
+			target = 685EB18B6B251DBD96963DFED5E895BB /* CTMediator */;
+			targetProxy = 18BA25B5E6001289C7DB519812D356C9 /* PBXContainerItemProxy */;
+		};
+		C28BAF34A91192779410D30B7FBA2C46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSDFULibrary;
+			target = FD94DA638B5BB880CCE6B0C7FFE923BB /* iOSDFULibrary */;
+			targetProxy = DAB6308B9173DA936C195FA332154169 /* PBXContainerItemProxy */;
+		};
+		C6AA305C96DC4846B681F023A458145E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTMediator;
+			target = 685EB18B6B251DBD96963DFED5E895BB /* CTMediator */;
+			targetProxy = 947605451BA9F8BBC48CB442EC626B5B /* PBXContainerItemProxy */;
+		};
+		D5940A729D0D0AF21CE9A9164224B079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XiaoYu_Bluetooth;
+			target = 23F522D463E3C8BD0A74E0088D7BC6AA /* XiaoYu_Bluetooth */;
+			targetProxy = F78FAA3E529C50CE9148FDB6FE109FA2 /* PBXContainerItemProxy */;
+		};
+		DE1D612EFB5E9DC98F9B32E144D70537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTMediator;
+			target = 685EB18B6B251DBD96963DFED5E895BB /* CTMediator */;
+			targetProxy = 1470A32E618E7DED5F07ABA81BE2A47F /* PBXContainerItemProxy */;
+		};
+		DFC20C4BA434820E88D05FD6B9AA654A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RJBluetooth;
+			target = 8C665CAE90AF7480F709AF8223B4D55D /* RJBluetooth */;
+			targetProxy = 81255723E09890CFD5260D0EEFEF07C1 /* PBXContainerItemProxy */;
+		};
+		EB706093521DF3248B95CB1744B72022 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RJBluetooth_Mediator;
+			target = 0865FFA6A85B340373FFFFFC737505A5 /* RJBluetooth_Mediator */;
+			targetProxy = E6B1FC0B2CDEA156DC7EC9EA27DCD532 /* PBXContainerItemProxy */;
+		};
+		ED04DE23A97C163AEEE0164E2B2A150F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XiaoYu_Bluetooth_Mediator;
+			target = 55F026717CC64042402D86EC73B62B64 /* XiaoYu_Bluetooth_Mediator */;
+			targetProxy = AF8150AFB38715CAE657E14EBC478DD4 /* PBXContainerItemProxy */;
+		};
+		F73172551CD4DC0279941610DE14DCC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSDFULibrary;
+			target = FD94DA638B5BB880CCE6B0C7FFE923BB /* iOSDFULibrary */;
+			targetProxy = C0FFAE84CB0BF38B548CB12E986194E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06768AD76939A3C188DEE1B3C1A00067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C25EB61317012743317107F0884755F6 /* CTMediator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CTMediator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CTMediator/CTMediator.modulemap";
+				PRODUCT_NAME = CTMediator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0B90E16A4E43CA78ED0A0DF9D930212D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B43A931F2286F1F1E318B066FBF3D994 /* RJBluetooth_Mediator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RJBluetooth_Mediator/RJBluetooth_Mediator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RJBluetooth_Mediator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RJBluetooth_Mediator/RJBluetooth_Mediator.modulemap";
+				PRODUCT_NAME = RJBluetooth_Mediator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1551313D6C838F1B302A5566FDE5335A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B43A931F2286F1F1E318B066FBF3D994 /* RJBluetooth_Mediator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RJBluetooth_Mediator/RJBluetooth_Mediator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RJBluetooth_Mediator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RJBluetooth_Mediator/RJBluetooth_Mediator.modulemap";
+				PRODUCT_NAME = RJBluetooth_Mediator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		15D9AF4F19DC1751FC39BB9D77B4B3FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8BD7BC58DF10E957BF3154E2D7FFBE5 /* Pods-XiaoYu_Bluetooth_Mediator_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Tests/Pods-XiaoYu_Bluetooth_Mediator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XiaoYu_Bluetooth_Mediator_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		27CC7BB854011B22772A993052E5DDF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59F21EE1A13BBF5E64E5CF9055213D87 /* Pods-XiaoYu_Bluetooth_Mediator_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Example/Pods-XiaoYu_Bluetooth_Mediator_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XiaoYu_Bluetooth_Mediator_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CA3C06B80DB07AE16B9577EE80EA6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C25EB61317012743317107F0884755F6 /* CTMediator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CTMediator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CTMediator/CTMediator.modulemap";
+				PRODUCT_NAME = CTMediator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		65A2943D2F3B15D12B3BB07C536AFDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFD6182882025BF62115E675C1CFF429 /* Zip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67312CC17709A801CE41A13E405295A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A11DF242D8D4A76B53AC01212AC700A /* iOSDFULibrary.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDFULibrary/iOSDFULibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSDFULibrary/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary.modulemap";
+				PRODUCT_NAME = iOSDFULibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BA096E1E9C7FD1CC210B8372FE368C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C5FB98E2852CF9BE82CABC5C17723E /* XiaoYu_Bluetooth_Mediator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XiaoYu_Bluetooth_Mediator/XiaoYu_Bluetooth_Mediator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XiaoYu_Bluetooth_Mediator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XiaoYu_Bluetooth_Mediator/XiaoYu_Bluetooth_Mediator.modulemap";
+				PRODUCT_NAME = XiaoYu_Bluetooth_Mediator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		70705A8C948CA7841CC8FDB6602ED87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4995DB2B6E834FB1992D7CA460460DBE /* RJBluetooth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RJBluetooth/RJBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RJBluetooth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RJBluetooth/RJBluetooth.modulemap";
+				PRODUCT_NAME = RJBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7BCD6CAA3FF7F5A92C938A293B14F74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C5FB98E2852CF9BE82CABC5C17723E /* XiaoYu_Bluetooth_Mediator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XiaoYu_Bluetooth_Mediator/XiaoYu_Bluetooth_Mediator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XiaoYu_Bluetooth_Mediator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XiaoYu_Bluetooth_Mediator/XiaoYu_Bluetooth_Mediator.modulemap";
+				PRODUCT_NAME = XiaoYu_Bluetooth_Mediator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9C748515628D92BB268FC1B558510915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D959599F19D3A2EF446DA4E402E28A /* Pods-XiaoYu_Bluetooth_Mediator_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Tests/Pods-XiaoYu_Bluetooth_Mediator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XiaoYu_Bluetooth_Mediator_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9370F58CAA8C2341542769F4B3D726C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFD6182882025BF62115E675C1CFF429 /* Zip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B73D18F85C7EB3E7DA1278FB8EBB79FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4E8B9F9D1FD2E1FD12C3E08255E8B4 /* Pods-XiaoYu_Bluetooth_Mediator_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XiaoYu_Bluetooth_Mediator_Example/Pods-XiaoYu_Bluetooth_Mediator_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XiaoYu_Bluetooth_Mediator_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9850FDFB7C1D5B093CE353F09E34344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7348A5FB5A307901D847A9BF9103EC8 /* XiaoYu_Bluetooth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XiaoYu_Bluetooth/XiaoYu_Bluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XiaoYu_Bluetooth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XiaoYu_Bluetooth/XiaoYu_Bluetooth.modulemap";
+				PRODUCT_NAME = XiaoYu_Bluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4FA45EB41ED8800CC6ACA25A4E7E705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7348A5FB5A307901D847A9BF9103EC8 /* XiaoYu_Bluetooth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XiaoYu_Bluetooth/XiaoYu_Bluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XiaoYu_Bluetooth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XiaoYu_Bluetooth/XiaoYu_Bluetooth.modulemap";
+				PRODUCT_NAME = XiaoYu_Bluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E707706869EA9BFE7B18A0BEE07695BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A11DF242D8D4A76B53AC01212AC700A /* iOSDFULibrary.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDFULibrary/iOSDFULibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSDFULibrary/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary.modulemap";
+				PRODUCT_NAME = iOSDFULibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F67FF2CC605C3B61D67162EC7E6D94EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4995DB2B6E834FB1992D7CA460460DBE /* RJBluetooth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RJBluetooth/RJBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RJBluetooth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RJBluetooth/RJBluetooth.modulemap";
+				PRODUCT_NAME = RJBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01A4B7E92C4363610572DB683149FEEE /* Build configuration list for PBXNativeTarget "Zip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9370F58CAA8C2341542769F4B3D726C /* Debug */,
+				65A2943D2F3B15D12B3BB07C536AFDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1980D00135F531F15ED0643BDFB1304B /* Build configuration list for PBXNativeTarget "Pods-XiaoYu_Bluetooth_Mediator_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B73D18F85C7EB3E7DA1278FB8EBB79FD /* Debug */,
+				27CC7BB854011B22772A993052E5DDF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
+				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B30E710534CA4A148577E7097D0F40F /* Build configuration list for PBXNativeTarget "XiaoYu_Bluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FA45EB41ED8800CC6ACA25A4E7E705 /* Debug */,
+				C9850FDFB7C1D5B093CE353F09E34344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67A7DBAB793AE14E5B11F08DE3A08B40 /* Build configuration list for PBXNativeTarget "CTMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06768AD76939A3C188DEE1B3C1A00067 /* Debug */,
+				3CA3C06B80DB07AE16B9577EE80EA6FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		695A3771616491D2CAC7AC1739118432 /* Build configuration list for PBXNativeTarget "RJBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67FF2CC605C3B61D67162EC7E6D94EA /* Debug */,
+				70705A8C948CA7841CC8FDB6602ED87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94FE312D6627E3607EB1CB73C3BF7E39 /* Build configuration list for PBXNativeTarget "iOSDFULibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E707706869EA9BFE7B18A0BEE07695BC /* Debug */,
+				67312CC17709A801CE41A13E405295A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		975496D3BF524F00B1B4E0D0760B7C5A /* Build configuration list for PBXNativeTarget "XiaoYu_Bluetooth_Mediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCD6CAA3FF7F5A92C938A293B14F74B /* Debug */,
+				6BA096E1E9C7FD1CC210B8372FE368C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3566EFF3B2B39DEF4D8345A9E9F123C /* Build configuration list for PBXNativeTarget "RJBluetooth_Mediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B90E16A4E43CA78ED0A0DF9D930212D /* Debug */,
+				1551313D6C838F1B302A5566FDE5335A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12BDFCFAD447AB627A684361BEE6A00 /* Build configuration list for PBXNativeTarget "Pods-XiaoYu_Bluetooth_Mediator_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C748515628D92BB268FC1B558510915 /* Debug */,
+				15D9AF4F19DC1751FC39BB9D77B4B3FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

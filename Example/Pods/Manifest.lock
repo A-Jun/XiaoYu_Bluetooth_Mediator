@@ -1,0 +1,34 @@
+PODS:
+  - CTMediator (25)
+  - iOSDFULibrary (4.2.2):
+    - Zip (~> 1.0)
+  - RJBluetooth (0.1.1):
+    - CTMediator
+  - RJBluetooth_Mediator (0.1.0):
+    - RJBluetooth
+  - XiaoYu_Bluetooth (0.1.1):
+    - iOSDFULibrary
+    - RJBluetooth_Mediator
+  - XiaoYu_Bluetooth_Mediator (0.1.0):
+    - XiaoYu_Bluetooth
+  - Zip (1.1.0)
+
+DEPENDENCIES:
+  - XiaoYu_Bluetooth_Mediator (from `../`)
+
+EXTERNAL SOURCES:
+  XiaoYu_Bluetooth_Mediator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  iOSDFULibrary: 65a30a36d33ef451ef2d6c2b6a002a26eed786af
+  RJBluetooth: 40b70b617f1c4c633895323b646a7507f6fa294f
+  RJBluetooth_Mediator: e530acfdae2a55d07a07e7e76dd74d6dcbb27215
+  XiaoYu_Bluetooth: 95df00265b4061053c54f0e47ddb2f329036da6e
+  XiaoYu_Bluetooth_Mediator: 42e7ed633891e4ff46b1bcbf5b949c86d7a40894
+  Zip: 8877eede3dda76bcac281225c20e71c25270774c
+
+PODFILE CHECKSUM: 16703c000253cd65fea80e8f80e077e8fe4ab120
+
+COCOAPODS: 1.4.0
